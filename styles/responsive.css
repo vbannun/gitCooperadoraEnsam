@@ -1,0 +1,9 @@
+@media (max-width: 768px) {
+    .contenedorDoble {
+      flex-direction: column;
+    }
+  
+    .boxDoble {
+      flex-basis: 100%;
+    }
+  }

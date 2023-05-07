@@ -1,0 +1,174 @@
+/*===============================================*/
+/*    VARIABLES REUTILIZABLES                    */
+/*===============================================*/
+:root { 
+  --azulclaro: #37417f;
+  --azuloscuro: #1c203d;
+  --black: #000000;
+  --blanco: #fcfdfd;
+  --celeste: #7480c5;
+  --celesteclaro: #ebeeff;
+  --grisoscuro: #9c9c9c;
+  --negro: #00050a;
+  --white: #ffffff;
+ 
+  --font-size-l: 17px;
+  --font-size-m: 16px;
+  --font-size-s: 12px;
+  --font-size-xl: 24px;
+  --font-size-xxl: 32px;
+  --font-size-xxxl: 36px;
+ 
+  --font-family-andalusia_script-regular: "Andalusia Script-Regular", Helvetica;
+  --font-family-montserrat: "Montserrat", Helvetica;
+}
+
+/* --- TITULOS Y TEXTOS --- */
+
+/* --- CONTEDENOR Y FONDOS --- */
+.contenedorDoble {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+/* --- LINK --- */
+.linkTexto{
+  color: VAR(--celeste);
+}
+.linkTexto:hover{
+  color: var(--azulclaro);
+  cursor: pointer;
+}
+
+/*===============================================*/
+/*    HEADER                                     */
+/*===============================================*/
+
+/* --- NAVEGADOR --- */
+
+/* --- LOGO HEADER --- */
+
+/*===============================================*/
+/*    PORTADA                                    */
+/*===============================================*/
+
+/* --- IMAGEN FONDO --- */
+
+/* --- PIE E IMAGEN LOGO PORTADA --- */
+
+/*===============================================*/
+/*    NOSOTROS                                   */
+/*===============================================*/
+
+/*===============================================*/
+/*    ACCIONES                                   */
+/*===============================================*/
+.boxDoble {
+  flex-basis: calc(50% - 10px);
+  margin-bottom: 20px;
+}
+/*===============================================*/
+/*    SOCIOS/AS                                  */
+/*===============================================*/
+/* --- BOTONES --- */
+.botonPrimario {
+  background-color: var(--azulclaro);
+  color: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  padding: 10px 30px;
+  border: 1.5px solid var(--azulclaro);
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-m);
+  font-weight:600;
+}
+.botonPrimario:hover,
+.botonPrimario:focus {
+  cursor: pointer;
+  background-color: var(--celeste);
+  box-shadow: inset 0px 2px 6px rgba(28, 32, 61, 0.71);
+}
+.botonSecundario {
+  background-color: var(--blanco);
+  color: var(--azulclaro);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  padding: 10px 30px;
+  border: 1.5px solid var(--azulclaro);
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-m);
+  font-weight:600;
+}
+.botonSecundario:hover,
+.botonSecundario:focus {
+  cursor: pointer;
+  box-shadow: inset 0px 2px 6px rgba(28, 32, 61, 0.71);
+  background-color: var(--celesteclaro);
+}
+
+/* --- MODAL ASOCIATE --- */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+.modal-contenido {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fefefe;
+  padding: 20px;
+  border: 1px solid #888;
+  text-align: center;
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-m);
+}
+.cerrar-modal {
+  float: right;
+  padding: 0 10px;
+  font-size: var(--font-size-xl);
+}
+.cerrar-modal:hover,
+.cerrar-modal:focus {
+  cursor: pointer;
+}
+#modalSocios {
+  border: 1px solid black;
+}
+.oscurecer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  display: none;
+}
+
+/*===============================================*/
+/*    CAMPAÑAS                                   */
+/*===============================================*/
+.boxDoble {
+
+}
+.boxDoble img{
+
+}
+/*===============================================*/
+/*    CONTACTO                                   */
+/*===============================================*/
+
+/*===============================================*/
+/*    FOOTER                                     */
+/*===============================================*/
+
