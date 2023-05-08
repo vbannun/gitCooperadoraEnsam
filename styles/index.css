@@ -75,7 +75,7 @@
 /* --- BOTONES --- */
 .botonPrimario {
   background-color: var(--azulclaro);
-  color: white;
+  color: var(--blanco);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 12px;
   padding: 10px 30px;
@@ -83,6 +83,7 @@
   font-family: var(--font-family-montserrat);
   font-size: var(--font-size-m);
   font-weight:600;
+  transition: all 0.2s ease;
 }
 .botonPrimario:hover,
 .botonPrimario:focus {
@@ -100,6 +101,7 @@
   font-family: var(--font-family-montserrat);
   font-size: var(--font-size-m);
   font-weight:600;
+  transition: all 0.2s ease;
 }
 .botonSecundario:hover,
 .botonSecundario:focus {
@@ -125,7 +127,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #fefefe;
+  background-color: var(--blanco);
   padding: 20px;
   border: 1px solid #888;
   text-align: center;
@@ -167,6 +169,35 @@
 /*===============================================*/
 /*    CONTACTO                                   */
 /*===============================================*/
+
+/* --- BOTON REDES --- */
+.botonRedes {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--azulclaro);
+  color: var(--blanco);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: none;
+  font-size: var(--font-size-m);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+.botonRedes:hover {
+  background-color: var(--celeste);
+  box-shadow: inset 0px 2px 6px rgba(28, 32, 61, 0.71);
+}
+
+/* --- DISTRIBUCIÓN LINEAL --- */
+.redesSociales {
+  display: flex;
+  justify-content: left;
+  gap: 10px;
+}
 
 /*===============================================*/
 /*    FOOTER                                     */
