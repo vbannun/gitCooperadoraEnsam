@@ -212,12 +212,50 @@
     </section>
     <section class="contenedorDoble">
       <section class="boxDoble">
+        <section id="formulario"> <!-- dar estilo con clases-->
+          <form id="consultaEnsam" action="php/enviar_formulario.php" method="POST">
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required><br><br>
+            
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Ingrese su email" required><br><br>
+            
+            <label for="celular">Celular:</label><br>
+            <input type="tel" id="celular" name="celular" placeholder="Ingrese su número de celular sin 0 ni 15"><br><br>
+
+            <label for="asunto">Asunto:</label>
+            <select id="asunto" name="asunto">
+              <option value="consulta">Consulta General</option>
+              <option value="informacion">Información para asociarme</option>
+              <option value="aportes">Quiero hacer un aporte solidario</option>
+              <option value="coolaborar">Quiero ser colaborador/a</option>
+              <option value="cooperador">Quiero formar parte de la cooperadora</option>
+              <option value="otros">Otras consultas</option>
+            </select><br><br>
+                        
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Ingrese su mensaje" required></textarea><br><br>
+
+            <div class="g-recaptcha" data-sitekey="6LdzqvIlAAAAAGTI5c6x5C9lmegYqWF6hGHnJdpH"></div><br>
+
+            <button type="submit" id="enviar" class="botonPrimario">Enviar</button>
+          </form>
+          <div id="modalContacto" class="modal">
+            <div class="modal-contenido">
+              <span class="cerrar">&times;</span>
+              <p>Su consulta se ha enviado correctamente.</p>
+            </div>
+          </div>
+            
+        </section>
 
       </section>
+
+     
       <section class="boxDoble">
         <p class="textoGeneralNegro">acá otros datos de contacto<br/></p>
-        <p class="textoGeneralNegro">Manuela Castro 990, Lomas de Zamora<br/>Buenos Aires, Argentina<br/>ensamcooperadora@gmail.com</p>
-        <section class="redesSociales"> <!-- recordar display flex -->
+        <p class="textoGeneralNegro">Manuel Castro 990, Lomas de Zamora<br/>Buenos Aires, Argentina<br/>ensamcooperadora@gmail.com</p>
+        <section class="redesSociales"> <!-- los iconos aun no funcionan... themify-icons revisar-->
           <button class="botonRedes" onclick="window.open('mailto:ensamcooperadora@gmail.com');"><i class="fa fa-envelope"></i></button>
           <a href="#" target="_blank"><button class="botonRedes">F</button></a>
           <a href="#" target="_blank"><button class="botonRedes">I</button></a>
@@ -230,6 +268,7 @@
 
 
   </main>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <script src="./javascript/index.js"></script>
 </body>
 </html>
