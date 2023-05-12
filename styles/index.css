@@ -45,26 +45,116 @@
 /*===============================================*/
 /*    HEADER                                     */
 /*===============================================*/
+.bgAzul{
+  background-color: VAR(--azuloscuro);
+}
+.contenedor{
 
+}
 /* --- NAVEGADOR --- */
+.contenedor navegador1{
 
+}
+.top_menu{
+
+}
 /* --- LOGO HEADER --- */
 
 /*===============================================*/
 /*    PORTADA                                    */
 /*===============================================*/
+.bgAzulbg Banner{
 
+}
+.pieDeBanner gridContainerPorcentual{
+
+}
 /* --- IMAGEN FONDO --- */
 
 /* --- PIE E IMAGEN LOGO PORTADA --- */
+.elementoPortada1{
 
+}
+.alignTextTop{
+
+}
+.andaluciaScript alignTextBottom{
+
+}
+.elementoPortada2{
+
+}
 /*===============================================*/
 /*    NOSOTROS                                   */
 /*===============================================*/
+.textoAzulClaro{
+  color: VAR(--azulclaro);
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-xxxl);
+ 
+}
+.gridContenedorSimple{
+  color: VAR(--negro);  
+  font-family: var(--font-family-andalusia_script-regular);
+  font-weight: bold;
+  display: grid;
+  
+  
+}
+.textoGeneralNegro{
+  color: VAR(--negro);  
+  font-family: var(--font-family-andalusia_script-regular);
+  font-weight: bold;
+}
+
+.celesteClaro textTitulares{
+ 
+  
+  
+  
+}
+.textoNombresCargostextDosColumnas{
+  display: grid;
+
+  
+
+}
+
+
+.span cargos{
+  
+
+}
+
+
+
+.linkTexto{
+  color: VAR(--celeste);
+  font-family: var(--font-family-andalusia_script-regular);
+  font-weight: bold;
+}
 
 /*===============================================*/
 /*    ACCIONES                                   */
 /*===============================================*/
+.bgAzul{
+  background-color: VAR(--azuloscuro);
+
+}
+.contenedor{
+ 
+
+}
+.textoCelesteClarito, .textoCelesteClaro{
+  color: VAR(--celesteclaro);
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-xxxl);
+
+}
+textDosColumnas textoGeneralBlanco{
+ 
+}
+
 .boxDoble {
   flex-basis: calc(50% - 10px);
   margin-bottom: 20px;
@@ -72,6 +162,14 @@
 /*===============================================*/
 /*    SOCIOS/AS                                  */
 /*===============================================*/
+.bgBlanco{
+  background-color: VAR(--blanco);
+
+}
+.contenedor{
+
+}
+
 /* --- BOTONES --- */
 .botonPrimario {
   background-color: var(--azulclaro);
