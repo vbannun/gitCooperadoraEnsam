@@ -1,3 +1,13 @@
+/*===============================================*/
+/*     Mobile, Tablet                            */
+/*===============================================*/
+
+@media (max-width:850px){
+
+	.contenedor {
+		max-width: 800px;
+	}
+}
 @media (max-width: 768px) {
     .contenedorDoble {
       flex-direction: column;

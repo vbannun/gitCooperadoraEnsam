@@ -22,16 +22,41 @@
   --font-family-andalusia_script-regular: "Andalusia Script-Regular", Helvetica;
   --font-family-montserrat: "Montserrat", Helvetica;
 }
+body {
+  margin: 0 0;
+}
 
 /* --- TITULOS Y TEXTOS --- */
+.textoGeneralBlanco{
+  color: var(--blanco);
+}
 
 /* --- CONTEDENOR Y FONDOS --- */
+.contenedor {
+  max-width: 1000px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 .contenedorDoble {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+}
+.gridContenedorSimple{
+  align-items: center;
+}
+.bgAzul {
+  background-color: var(--azuloscuro);
+  color: var(--blanco);
+}
+.bgBlanco {
+  background-color: var(--blanco);
+  color: var(--black);
 }
 /* --- LINK --- */
 .linkTexto{
