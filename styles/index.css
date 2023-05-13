@@ -223,6 +223,37 @@ body {
   justify-content: left;
   gap: 10px;
 }
+#consultaEnsam input {
+  width: 80%;
+  height: 27px;
+  border-radius: 10px;
+  padding: 5px 10px;
+  border: 1.5px solid var(--azulclaro);
+  font-family: var(--font-family-montserrat);
+}
+#consultaEnsam textarea {
+  width: 80%;
+  border-radius: 10px;
+  padding: 5px 10px;
+  border: 1.5px solid var(--azulclaro);
+  font-family: var(--font-family-montserrat);
+}
+input::placeholder {
+  color: var(--celeste);
+}
+textarea::placeholder {
+  color: var(--celeste);
+}
+#consultaEnsam select{
+  width: 84%;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 1.5px solid var(--azulclaro);
+  font-family: var(--font-family-montserrat);
+}
+#consultaEnsam label {
+  font-size: medium;
+}
 
 /*===============================================*/
 /*    FOOTER                                     */
