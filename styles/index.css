@@ -35,7 +35,7 @@
 }
 /* --- LINK --- */
 .linkTexto{
-  color: VAR(--celeste);
+  color: var(--grisoscuro);
 }
 .linkTexto:hover{
   color: var(--azulclaro);
@@ -44,6 +44,14 @@
 
 /*===============================================*/
 /*    HEADER                                     */
+
+#header {
+background-color: #37417f;
+color: #fcfdfd;
+
+}
+
+
 /*===============================================*/
 
 /* --- NAVEGADOR --- */
@@ -52,6 +60,16 @@
 
 /*===============================================*/
 /*    PORTADA                                    */
+h1{
+  background-color: blanco;
+  color: var(--azulclaro)
+}
+
+h2{
+  background-color: var(--blanco);
+  color: var(--azulclaro)
+}
+
 /*===============================================*/
 
 /* --- IMAGEN FONDO --- */
@@ -60,17 +78,34 @@
 
 /*===============================================*/
 /*    NOSOTROS                                   */
+
+#nosotros{
+  background-color: var(--blanco);
+  color: var(--negro)
+}
+.span{ color:#37417f}
+
 /*===============================================*/
 
 /*===============================================*/
 /*    ACCIONES                                   */
 /*===============================================*/
+#acciones{
+  background-color: var(--azuloscuro);
+  color: var(--blanco)
+}
 .boxDoble {
   flex-basis: calc(50% - 10px);
   margin-bottom: 20px;
 }
 /*===============================================*/
 /*    SOCIOS/AS                                  */
+#socios{
+  background-color:var(--blanco);
+  color:var(--negro)
+}
+
+
 /*===============================================*/
 /* --- BOTONES --- */
 .botonPrimario {
@@ -160,6 +195,10 @@
 /*===============================================*/
 /*    CAMPAÑAS                                   */
 /*===============================================*/
+#campanas {
+  background-color: var(--azuloscuro);
+  color: var(--blanco)
+}
 .boxDoble {
 
 }
