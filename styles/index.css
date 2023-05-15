@@ -342,8 +342,11 @@ section.textDosColumnas{
 /*    CONTACTO                                   */
 /*===============================================*/
 
-/* --- BOTON REDES --- */
-.botonRedes {
+/* --- BOTON REDES --- AL final de todo puse lo nuevo de estos botones, es lo que está habilitado y actualizado ahora*/
+/*.redesSociales {
+  text-align: center;
+}
+*.botonRedes {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -363,13 +366,13 @@ section.textDosColumnas{
   background-color: var(--celeste);
   box-shadow: inset 0px 2px 6px rgba(28, 32, 61, 0.71);
 }
-
+*/
 /* --- DISTRIBUCIÓN LINEAL --- */
-/*.redesSociales {
+.redesSociales {
   display: flex;
   justify-content: left;
   gap: 10px;
-}*/
+}
 /* --- FORMULARIO --- */
 #consultaEnsam input {
   width: 80%;
@@ -421,7 +424,7 @@ font-size: var(--font-size-l);
 
 
 
-.redesSociales {
+/*.redesSociales {
   text-align: center;
 }
 
@@ -430,14 +433,44 @@ font-size: var(--font-size-l);
   margin: 10px;
   padding: 10px 20px;
   border: 1px;
-  background-color: var(--grisoscuro);
-  color: var(--azuloscuro);
+  background-color: var(--azulclaro);
+  color: var(--blanco);
   font-size: 20px;
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  font-family: var(--font-family-montserrat)
+ 
 }
 
 .botonRedes:hover {
-  background-color:var(--azulclaro);
+  background-color:var(--celeste);
+}*/
+
+
+
+
+.redesSociales {
+  display: flex;
+  justify-content: left;
+  gap: 10px;
+}  
+
+.botonRedes {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  border: 1px;
+  background-color: var(--azulclaro);
+  color: var(--blanco);
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: var(--font-family-montserrat);
+  border-radius: 50%; /* Hace que el botón sea redondo */
+}
+
+.botonRedes:hover {
+  background-color: var(--celeste);
 }
