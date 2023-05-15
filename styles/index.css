@@ -19,8 +19,8 @@
   --font-size-xxl: 32px;
   --font-size-xxxl: 36px;
  
-  --font-family-andalusia_script-regular: "Andalusia Script-Regular", Helvetica;
   --font-family-montserrat: "Montserrat", Helvetica;
+  --font-family-cookie: "cookie", cursive;
 }
 body {
   margin: 0 0;
@@ -29,6 +29,9 @@ body {
 /* --- TITULOS Y TEXTOS --- */
 .textoGeneralBlanco{
   color: var(--blanco);
+}
+.cookieScript { 
+  font-family: var(--font-family-cookie);
 }
 
 /* --- CONTEDENOR Y FONDOS --- */
@@ -46,6 +49,9 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+}
+.alinearArriba {
+  align-items: flex-start;
 }
 .gridContenedorSimple{
   align-items: center;
@@ -72,21 +78,42 @@ body {
 /*===============================================*/
 
 /* --- NAVEGADOR --- */
+#nav {
+  padding-bottom: 0;
+}
 .top_menu{
   height: 44px;
   letter-spacing: 0;
-  text-align: center;
   display: flex;
   justify-content: right;
+  text-align: center;
+  font-family: var(--font-family-montserrat);
+  font-weight: 600;
+  font-size: var(--font-size-m);
+  margin: 0 auto;
 }
-
+.top_menu ul{
+  margin: 0 auto;
+}
 .top_menu li {
-  margin: 0 10px;
+  height: 44px;
+  width: 120px;
+  line-height: 44px;
+}
+.top_menu li:hover{
+  color: var(--celeste);
 }
 
 .top_menu a {
   text-decoration: none;
-  color: #000;
+  color: var(--celesteclaro);
+}
+.top_menu li:hover a {
+  text-decoration: none;
+  color: var(--celeste);
+}
+#navegador li {
+  list-style: none;
 }
 /* --- LOGO HEADER --- */
 
@@ -95,7 +122,21 @@ body {
 /*===============================================*/
 
 /* --- IMAGEN FONDO --- */
+.bgBanner {
+  background-image: url(../img/rectangle-2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 60%; 
+}
 
+#portada {
+  min-height: 38em;
+  height: auto;
+}
+#portada .bgBanner img {
+  max-width: 100%;
+  height: auto;
+}
 /* --- PIE E IMAGEN LOGO PORTADA --- */
 
 /*===============================================*/
@@ -108,6 +149,9 @@ body {
 .boxDoble {
   flex-basis: calc(50% - 10px);
   margin-bottom: 20px;
+}
+.alinearArriba {
+  vertical-align: top;
 }
 /*===============================================*/
 /*    SOCIOS/AS                                  */

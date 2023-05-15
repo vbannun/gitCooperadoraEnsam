@@ -16,4 +16,8 @@
     .boxDoble {
       flex-basis: 100%;
     }
+
+    #portada {
+      min-height: 50vh; 
+    }
   }

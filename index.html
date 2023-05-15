@@ -26,8 +26,11 @@
   <link rel="stylesheet" href="./fonts/themify-icons.css">
 
   <!-- Google Fonts -->  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,600" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Andalus" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+  
 
 
 </head>
@@ -43,7 +46,7 @@
       </a>
     </section>
     <section id="nav" class="contenedor navegador1">
-      <ul class="top_menu">
+      <ul id="navegador" class="top_menu">
         <li><a href="#">Home</a></li>
         <li><a href="#nosotros">Nosotros</a></li>
         <li><a href="#acciones">Acciones</a></li>
@@ -56,10 +59,10 @@
   <!-- Portada -->
   <section id="portada" class="bgAzul bgBanner"> <!--en esta clase va la imagen de fondo -->
     <section class="contenedor">
-      <section id="pieDeBanner gridContainerPorcentual"> 
+      <section class="pieDeBanner gridContainerPorcentual"> 
         <section class="elementoPortada1"> <!--acá determinar tamaños y porcentajes según tamaño de pantallas 70/30 -->
           <h1 class="alignTextTop">Asociación Cooperadora<br/>Unidad Académica<br/>Antonio Mentruyt</h1>
-          <p class="andaluciaScript alignTextBottom">Por amor a Nuestra Escuela, a Nuestras Familias y a la Educación Pública</p> 
+          <p class="cookieScript alignTextBottom">Por amor a Nuestra Escuela, a Nuestras Familias y a la Educación Pública</p> 
         </section>
         <section class="elementoPortada2"> <!--acá determinar tamaños y porcentajes según tamaño de pantallas 70/30 -->
           <img src="../img/logoColor.png" alt="Logo Ensam">
@@ -85,22 +88,22 @@
           <h4 class="celesteClaro textTitulares">Integrantes</h4> <!-- la clase TextTitulares tendra padding top/botoom -->
           <section class="textoNombresCargos textDosColumnas"> <!-- la clase TextDosColumnas style="-webkit-column-count: 2; -moz-column-count: 2; column-count: 2;" -->
             <p>
-              <span class="span cargos">Presidenta</span> Paola Guzmán<br/>
-              <span class="span cargos">Secretaria</span> Natalia Lissarrague<br/>
-              <span class="span cargos">Tesorera</span> María Gabriela González<br/>
-              <span class="span cargos">Vocal 1 titular</span> Micaela Dominguez Caetano<br/>
-              <span class="span cargos">Vocal 1 suplente</span> Christian Lopez<br/>
-              <span class="span cargos">Vocal 2 titular</span> Mirtha Susana<br/>
-              <span class="span cargos">Vocal 2 suplente</span> Gloria Mabel Abelleira<br/>
+              <span class="cargos">Presidenta</span> Paola Guzmán<br/>
+              <span class="cargos">Secretaria</span> Natalia Lissarrague<br/>
+              <span class="cargos">Tesorera</span> María Gabriela González<br/>
+              <span class="cargos">Vocal 1 titular</span> Micaela Dominguez Caetano<br/>
+              <span class="cargos">Vocal 1 suplente</span> Christian Lopez<br/>
+              <span class="cargos">Vocal 2 titular</span> Mirtha Susana<br/>
+              <span class="cargos">Vocal 2 suplente</span> Gloria Mabel Abelleira<br/>
             </p>
             <p>
-              <span class="span cargos">Vocal 3 titular</span> Laira Vallejos<br/>
-              <span class="span cargos">Vocal 3 suplente</span> Liliana Bogado<br/>
-              <span class="span cargos">Vocal 4 titular</span> Virginia Bernadette Annun<br/>
-              <span class="span cargos">Vocal 4 suplente</span> Fernanda<br/>
-              <span class="span cargos">Revisor de Cuentas docente</span> Claudia García<br/>
-              <span class="span cargos">Revisor de Cuentas titular</span> Emilio<br/>
-              <span class="span cargos">Revisor de Cuentas suplente</span> Juan Manuel Latorre<br/>	
+              <span class="cargos">Vocal 3 titular</span> Laira Vallejos<br/>
+              <span class="cargos">Vocal 3 suplente</span> Liliana Bogado<br/>
+              <span class="cargos">Vocal 4 titular</span> Virginia Bernadette Annun<br/>
+              <span class="argos">Vocal 4 suplente</span> Fernanda<br/>
+              <span class="cargos">Revisor de Cuentas docente</span> Claudia García<br/>
+              <span class="cargos">Revisor de Cuentas titular</span> Emilio<br/>
+              <span class="cargos">Revisor de Cuentas suplente</span> Juan Manuel Latorre<br/>	
             </p>
           </section>
         </section>
@@ -207,16 +210,15 @@
             ya sea desde tu profesión u oficio, hacé clic en el botón:</p><br/>
             <a href="/camapanas.html" target="_blank"><button class="botonSecundario">Ver más</button></a>
         </section>
-      </section>
+      
     </section>
-  
     <!-- contacto -->
-    <section id="Contacto" class="bgBlanco">
+    <section id="contacto" class="bgBlanco">
       <section class="contenedor">
         <section class="gridContenedorSimple"> 
           <h2 class="textoAzulClaro">Contacto</h2>
         </section>
-        <section class="contenedorDoble">
+        <section class="contenedorDoble alinearArriba">
           <section class="boxDoble">
             <section id="formulario"> <!-- dar estilo con clases-->
               <form id="consultaEnsam" action="php/enviar_formulario.php" method="POST">
