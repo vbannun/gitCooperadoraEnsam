@@ -126,39 +126,7 @@ body {
 /* --- LOGO HEADER --- */
 
 /*===============================================*/
-/*    PORTADA    .pieDeBanner {
-  display: grid;
-  grid-template-columns: 70% 30%;
-  grid-template-rows: auto;
-  align-items: flex-end;
-}
-
-
-
-.elementoPortada2 img {
-  max-width: 100%;
-  height: auto;
-  
-}
-
-
-.bgBanner {
-  background-image: url(../img/rectangle-2.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 60%; 
-}
-
-#portada {
-  min-height: 38em;
-  height: auto;
-}
-#portada .bgBanner img {
-  max-width: 100%;
-  height: auto;
-}
-                                */
-/* Estilos generales */
+/*    PORTADA */   
 .contenedor {
   width: 100%;
   max-width: 1200px; /* Ajustar? */
@@ -166,7 +134,7 @@ body {
   padding: 20px;
 }
 
-/* Estilos del banner */
+
 #portada {
   position: relative;
   background-size: cover;
@@ -408,31 +376,32 @@ section.textDosColumnas{
 /*    CONTACTO                                   */
 /*===============================================*/
 
-/* --- BOTON REDES --- AL final de todo puse lo nuevo de estos botones, es lo que está habilitado y actualizado ahora*/
-/*.redesSociales {
-  text-align: center;
-}
-*.botonRedes {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
+/* --- BOTON REDES --- */
+.redesSociales {
+  display: flex;
+  justify-content: left;
+  gap: 10px;
+}  
+
+.botonRedes {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  border: 1px;
   background-color: var(--azulclaro);
   color: var(--blanco);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border: none;
-  font-size: var(--font-size-m);
+  font-size: 20px;
+  font-weight: bold;
   cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.2s ease;
+  transition: background-color 0.3s ease;
+  font-family: var(--font-family-montserrat);
+  border-radius: 50%; /* Hace que el botón sea redondo */
 }
 
 .botonRedes:hover {
   background-color: var(--celeste);
-  box-shadow: inset 0px 2px 6px rgba(28, 32, 61, 0.71);
 }
-*/
+
 /* --- DISTRIBUCIÓN LINEAL --- */
 .redesSociales {
   display: flex;
@@ -490,53 +459,8 @@ font-size: var(--font-size-l);
 
 
 
-/*.redesSociales {
-  text-align: center;
-}
-
-.botonRedes {
-  display: inline-block;
-  margin: 10px;
-  padding: 10px 20px;
-  border: 1px;
-  background-color: var(--azulclaro);
-  color: var(--blanco);
-  font-size: 20px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  font-family: var(--font-family-montserrat)
- 
-}
-
-.botonRedes:hover {
-  background-color:var(--celeste);
-}*/
 
 
 
 
-.redesSociales {
-  display: flex;
-  justify-content: left;
-  gap: 10px;
-}  
 
-.botonRedes {
-  display: inline-block;
-  margin: 10px;
-  padding: 10px 20px;
-  border: 1px;
-  background-color: var(--azulclaro);
-  color: var(--blanco);
-  font-size: 20px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  font-family: var(--font-family-montserrat);
-  border-radius: 50%; /* Hace que el botón sea redondo */
-}
-
-.botonRedes:hover {
-  background-color: var(--celeste);
-}
