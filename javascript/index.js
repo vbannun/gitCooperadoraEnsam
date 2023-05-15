@@ -1,3 +1,37 @@
+//Javasript para menu hamburguesa //////////////////////////////////////////////////////////////////////////
+// Obtener referencias a los elementos del DOM
+const hamburguerBtn = document.getElementById('hamburguer-btn');
+const navegador = document.getElementById('navegador');
+const listaItems = navegador.getElementsByTagName('li');
+
+// Función para alternar la visibilidad del menú al hacer clic en el botón hamburguesa
+function toggleMenu() {
+  navegador.classList.toggle('mostrar');
+}
+
+// Función para ocultar el menú al hacer clic en un elemento de la lista
+function hideMenu() {
+  navegador.classList.remove('mostrar');
+}
+
+// Función para ocultar el menú al hacer clic fuera de él
+function hideMenuOutside(event) {
+  if (!navegador.contains(event.target) && !hamburguerBtn.contains(event.target)) {
+    navegador.classList.remove('mostrar');
+  }
+}
+
+// Agregar eventos click a los elementos correspondientes
+hamburguerBtn.addEventListener('click', toggleMenu);
+
+for (let i = 0; i < listaItems.length; i++) {
+  listaItems[i].addEventListener('click', hideMenu);
+}
+
+document.addEventListener('click', hideMenuOutside);
+
+
+
 //Javasript para modal Socios - Asociarse //////////////////////////////////////////////////////////////////
 var boton = document.getElementById("botonSocios");
 var modal = document.getElementById("modalSocios");
