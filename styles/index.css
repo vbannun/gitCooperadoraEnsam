@@ -38,12 +38,8 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  height: auto;
   padding-top: 20px;
   padding-bottom: 20px;
-
-
-  
 }
 .contenedorDoble {
   display: flex;
@@ -77,82 +73,28 @@ body {
 /*===============================================*/
 
 /* --- NAVEGADOR --- */
+.top_menu{
+  height: 44px;
+  letter-spacing: 0;
+  text-align: center;
+  display: flex;
+  justify-content: right;
+}
 
+.top_menu li {
+  margin: 0 10px;
+}
+
+.top_menu a {
+  text-decoration: none;
+  color: #000;
+}
 /* --- LOGO HEADER --- */
 
 /*===============================================*/
 /*    PORTADA                                    */
 /*===============================================*/
-.bgAzul bgBanner{
-  display: grid;
-  position: relative;
-  width: 100%;   
-  height: auto;
 
-}
-.bgAzulbgBanner img{
-  display: grid;
-  width: 100%;
-  height: auto;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-}
-
-.pieDeBannergridContainerPorcentual{
-
-}
-
-.alignTextTop{
-
-position: absolute;
-width: 100%;
-height: auto;
-left: 220px;
-top: 372px;
-font-family: var(--font-family-montserrat);
-font-style: normal;
-font-weight: 700;
-font-size: var(--font-size-xxl);
-line-height: 44px;
-display: flex;
-align-items: flex-end;
-color: var(--blanco);
-
-
- 
-
-
-}
-.ScriptalignTextBottom{
-  
-  
-position: absolute;
-width: 800px;
-height: 100px;
-left: 220px;
-top: 500px;
-font-family: VAR(--font-family-rouge_script-regular);
-font-size: var(--font-size-xxl);
-font-style: 400;
-font-weight: 400;
-line-height: 45px;
-display: flex;
-align-items: flex-end;
-color: var(--blanco);
-  
-  
-  
-}
-.elementoPortada2{
-  position: absolute;
-  width: 200px;
-  height: 262px;
-  left: 1120px;
-  top: 380px;
-
-  
-
-}
 /* --- IMAGEN FONDO --- */
 
 /* --- PIE E IMAGEN LOGO PORTADA --- */
@@ -161,117 +103,13 @@ color: var(--blanco);
 /*    NOSOTROS                                   */
 /*===============================================*/
 
-.bgBlanco{
-  background-color: var(--blanco);
-  color: var(--black);
-
-}
-.contenedor{
-  max-width: 1000px;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
-
-}
-.textoAzulClaro{
-color: VAR(--azulclaro);
-font-family: VAR(--font-family-montserrat);
-text-align: center;
- 
-
-}
-.gridContenedorSimple{
-  align-items: center;
-}
-.textoGeneralNegro{
-  color: VAR(--negro);
-  font-family: VAR(--font-family-montserrat);
-}
-.celesteClarotextTitulares{
-  color: VAR(--azuloscuro);
-  font-family: VAR(--font-family-montserrat);
-}
-.textoNombresCargostextDosColumnas{
-  color: VAR(--negro);
-  font-family: VAR(--font-family-montserrat);
-  -webkit-column-count: 2;
-  -moz-column-count: 2; 
-  column-count: 2;
- 
-
-}
-.linkTexto{
-    color: VAR(--celeste);
-  }
-  .linkTexto:hover{
-    color: var(--azulclaro);
-    cursor: pointer;
-  }
-
-
-.spancargos{
-  color: var(--azulclaro);
-  font-family: VAR(--font-family-montserrat);
-  font-weight: bold;
-}
-
-
 /*===============================================*/
 /*    ACCIONES                                   */
 /*===============================================*/
 .boxDoble {
-
   flex-basis: calc(50% - 10px);
   margin-bottom: 20px;
-
-
-  color: var(--azuloscuro);
-  font-family: var(--font-family-montserrat);
 }
-.bgAzul{
-  background-color: var(--azuloscuro);
-  color: var(--blanco);
-}
-.contenedor{
-  max-width: 1000px;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
-
-}
-.gridContenedorSimple{
-  align-items: center;
-
-}
-.textDosColumnastextoGeneralBlanco{
-  color: VAR(--blanco);
-  font-family: VAR(--font-family-montserrat);
-  
-
-  
-  
-}
-.textoCelesteClaro{
-  color: VAR(--celesteclaro);
-  font-family: VAR(--font-family-montserrat);
-}
-.textoCelesteClarito{
-  color: VAR(--celesteclaro);
-  font-family: VAR(--font-family-montserrat);
-  text-align: center;
-}
-.textoAzulClaro{
-  color: VAR(--azulclaro);
-  font-family: VAR(--font-family-montserrat);
-
-
-
-}
-
 /*===============================================*/
 /*    SOCIOS/AS                                  */
 /*===============================================*/
@@ -369,15 +207,6 @@ text-align: center;
 .boxDoble img{
 
 }
-.textoGeneralBlanco{
-  color: VAR(--blanco);
-  font-family: VAR(--font-family-montserrat);
-}
-. 
-. 
-. 
-. 
-
 /*===============================================*/
 /*    CONTACTO                                   */
 /*===============================================*/
@@ -410,6 +239,7 @@ text-align: center;
   justify-content: left;
   gap: 10px;
 }
+/* --- FORMULARIO --- */
 #consultaEnsam input {
   width: 80%;
   height: 27px;
@@ -441,12 +271,12 @@ textarea::placeholder {
 #consultaEnsam label {
   font-size: medium;
 }
+#consultaEnsam button {
+  margin: 0 auto;
+  display: block;
+}
 
 /*===============================================*/
 /*    FOOTER                                     */
 /*===============================================*/
 
-.linksFootertextoCelesteClarito{
-  color: var(--celesteclaro);
-  font-family: var(--font-family-montserrat);
-}
