@@ -2,8 +2,24 @@
     .contenedorDoble {
       flex-direction: column;
     }
-  
+    
     .boxDoble {
       flex-basis: 100%;
     }
+    #portada {
+      min-height: 50vh; 
+    }
+    @media (max-width: 768px) {
+      .pieDeBanner {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        align-items: center;
+         text-align: center;
   }
+}
+    @media (max-width: 768px) {
+      .elementoPortada2 img {
+        max-width: 70%;
+        }
+      }
+    }

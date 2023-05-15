@@ -22,6 +22,7 @@
   --font-family-andalusia_script-regular: "Andalusia Script-Regular", Helvetica;
   --font-family-montserrat: "Montserrat", Helvetica;
   --font-family-rouge_script-regular: "Rouge Script", Helvetica;
+  --font-family-cookie: "cookie", cursive;
 }
 body {
   margin: 0 0;
@@ -33,6 +34,9 @@ body {
   font-family: var(--font-family-montserrat);
 }
 
+.cookieScript { 
+  font-family: var(--font-family-cookie);
+}
 /* --- CONTEDENOR Y FONDOS --- */
 .contenedor {
   max-width: 1000px;
@@ -42,7 +46,11 @@ body {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+.alinearArriba {
+  align-items: flex-start;
+}
 .contenedorDoble {
+  
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -74,27 +82,86 @@ body {
 /*===============================================*/
 
 /* --- NAVEGADOR --- */
+#nav {
+  padding-bottom: 0;
+}
 .top_menu{
   height: 44px;
   letter-spacing: 0;
-  text-align: center;
+  
   display: flex;
   justify-content: right;
+  text-align: center;
+  font-family: var(--font-family-montserrat);
+  font-weight: 600;
+  font-size: var(--font-size-m);
+  margin: 0 auto;
+
+}
+.top_menu ul{
+  margin: 0 auto;
+}
+.top_menu li {
+  height: 44px;
+  width: 120px;
+  line-height: 44px;
+}
+.top_menu li:hover{
+  color: var(--celeste);
 }
 
-.top_menu li {
-  margin: 0 10px;
-}
+
 
 .top_menu a {
   text-decoration: none;
-  color: #000;
+  color: var(--celesteclaro);
+}
+.top_menu li:hover a {
+  text-decoration: none;
+  color: var(--celeste);
+}
+#navegador li {
+  list-style: none;
 }
 /* --- LOGO HEADER --- */
 
 /*===============================================*/
 /*    PORTADA                                    */
+
 /*===============================================*/
+.pieDeBanner {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: auto;
+  align-items: flex-end;
+}
+
+
+
+.elementoPortada2 img {
+  max-width: 100%;
+  height: auto;
+  
+}
+
+
+.bgBanner {
+  background-image: url(../img/rectangle-2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 60%; 
+}
+
+#portada {
+  min-height: 38em;
+  height: auto;
+}
+#portada .bgBanner img {
+  max-width: 100%;
+  height: auto;
+}
+
+
 
 /* --- IMAGEN FONDO --- */
 
@@ -149,6 +216,9 @@ section.textDosColumnas{
   flex-basis: calc(50% - 10px);
   margin-bottom: 20px;
   font-family: var(--font-family-montserrat);
+}
+.alinearArriba {
+  vertical-align: top;
 }
 .textoCelesteClarito{
   color:var(--celesteclaro);
@@ -258,15 +328,16 @@ section.textDosColumnas{
 }
 
 /*===============================================*/
-/*    CAMPAÑAS                                   */
-/*===============================================*/
+/*    CAMPAÑAS            
 .boxDoble {
   
 
 }
 .boxDoble img{
 
-}
+}                       */
+/*===============================================*/
+
 /*===============================================*/
 /*    CONTACTO                                   */
 /*===============================================*/
@@ -294,11 +365,11 @@ section.textDosColumnas{
 }
 
 /* --- DISTRIBUCIÓN LINEAL --- */
-.redesSociales {
+/*.redesSociales {
   display: flex;
   justify-content: left;
   gap: 10px;
-}
+}*/
 /* --- FORMULARIO --- */
 #consultaEnsam input {
   width: 80%;
@@ -336,10 +407,37 @@ textarea::placeholder {
   display: block;
 }
 
+
+
+
 /*===============================================*/
 /*    FOOTER                                     */
 /*===============================================*/
 a.linksFooter {
 font-family: var(--font-family-montserrat);
 font-size: var(--font-size-l);
+}
+
+
+
+
+.redesSociales {
+  text-align: center;
+}
+
+.botonRedes {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  border: 1px;
+  background-color: var(--grisoscuro);
+  color: var(--azuloscuro);
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.botonRedes:hover {
+  background-color:var(--azulclaro);
 }

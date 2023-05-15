@@ -8,6 +8,8 @@
   <title>Cooperadora Ensam</title>
 
   <!-- FAVICON PARA CUALQUIER NAVEGADOR -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/themify-icons@latest/css/themify-icons.css">
+
 	<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
 	<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
  
@@ -26,6 +28,9 @@
   <link rel="stylesheet" href="./fonts/themify-icons.css">
 
   <!-- Google Fonts -->  
+  <!--Virshi-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,600" rel="stylesheet">
 <!--Shei Inicio-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,6 +38,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap" rel="stylesheet">
 <!--Shei fin-->
   <link href="https://fonts.googleapis.com/css?family=Andalus" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
 
 
 </head>
@@ -49,6 +55,7 @@
     </section>
     <section id="nav" class="contenedor navegador1">
       <ul class="top_menu">
+        <ul id="navegador" class="top_menu"></ul>
         <li><a href="#">Home</a></li>
         <li><a href="#nosotros">Nosotros</a></li>
         <li><a href="#acciones">Acciones</a></li>
@@ -61,13 +68,13 @@
   <!-- Portada -->
   <section id="portada" class="bgAzul bgBanner"> <!--en esta clase va la imagen de fondo -->
     <section class="contenedor">
-      <section id="pieDeBanner gridContainerPorcentual"> 
+      <section class="pieDeBanner gridContainerPorcentual"> 
         <section class="elementoPortada1"> <!--acá determinar tamaños y porcentajes según tamaño de pantallas 70/30 -->
           <h1 class="alignTextTop">Asociación Cooperadora<br/>Unidad Académica<br/>Antonio Mentruyt</h1>
-          <p class="andaluciaScript alignTextBottom">Por amor a Nuestra Escuela, a Nuestras Familias y a la Educación Pública</p> <!--Ver de cambiar a fuente Rouge Shei-->
+          <p class="cookieScript alignTextBottom">Por amor a Nuestra Escuela, a Nuestras Familias y a la Educación Pública</p> <!--Ver de cambiar a fuente Rouge Shei-->
         </section>
         <section class="elementoPortada2"> <!--acá determinar tamaños y porcentajes según tamaño de pantallas 70/30 -->
-          <img src="../img/logoColor.png" alt="Logo Ensam">
+          <img src="./img/rectangle-6@2x.png" alt="Logo Ensam">
         </section>        
       </section>  
     </section>     
@@ -246,12 +253,12 @@
     </section>
   
     <!-- contacto -->
-    <section id="Contacto" class="bgBlanco">
+    <section id="contacto" class="bgBlanco">
       <section class="contenedor">
         <section class="gridContenedorSimple"> 
           <h2 class="textoAzulClaro">Contacto</h2>
         </section>
-        <section class="contenedorDoble">
+        <section class="contenedorDoble alinearArriba">
           <section class="boxDoble">
             <section id="formulario"> <!-- dar estilo con clases-->
               <form id="consultaEnsam" action="php/enviar_formulario.php" method="POST">
@@ -300,12 +307,12 @@
             <p class="textoGeneralNegro">Teléfono: 4248-1700</p><!--Shei Fin-->
             <p class="textoGeneralNegro">Manuel Castro 990, Lomas de Zamora<br/>Buenos Aires, Argentina<br/>ensamcooperadora@gmail.com</p>
 
-            <section class="redesSociales"> <!-- los iconos aun no funcionan... themify-icons revisar-->
-              <button class="botonRedes" onclick="window.open('mailto:ensamcooperadora@gmail.com');"><i class="fa fa-envelope"></i> </button>
+
+            <section class="redesSociales">
+              <button class="botonRedes" onclick="window.open('mailto:ensamcooperadora@gmail.com');">E </button>                  
+              <a href="https:/www.facebook.com/cooperadora.ensam" target="_blank"><button class="botonRedes">F</button></a>
+              <a href="https:/www.instagram.com/cooperadoraensam/" target="_blank"><button class="botonRedes">I</button></a>
               
-              <a href="#" target="_blank"><button class="botonRedes">F</button></a>
-              <a href="#" target="_blank"><button class="botonRedes">I</button></a>
-              <a href="#" target="_blank"><button class="botonRedes">I</button></a>
             </section>
           </section>
         </section>
