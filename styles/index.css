@@ -33,7 +33,25 @@ body {
 .cookieScript { 
   font-family: var(--font-family-cookie);
 }
-
+.textoGeneralNegro {
+  color: var(--black)
+}
+h1 {
+  font-family: var(--font-family-montserrat);
+  font-weight: 700;
+  font-size: var(--font-size-xxxl);
+}
+h2 {
+  font-family: var(--font-family-montserrat);
+  font-weight: 700;
+  font-size: var(--font-size-xxl);
+  text-align: center;
+}
+h3 {
+  font-family: var(--font-family-montserrat);
+  font-weight: 600;
+  font-size: var(--font-size-xl);
+}
 /* --- CONTEDENOR Y FONDOS --- */
 .contenedor {
   max-width: 1000px;
@@ -167,8 +185,7 @@ body {
   border-radius: 10px;
   border: 1.5px solid var(--azulclaro);
 }
-#hamburguer-btn:hover,
-#hamburguer-btn:focus {
+#hamburguer-btn:hover {
   cursor: pointer;
   background-color: var(--celeste);
   box-shadow: inset 0px 2px 6px rgba(28, 32, 61, 0.71);
@@ -177,14 +194,28 @@ body {
   float: right;
   padding-right: 20px;
 }
-.navegadores {
-  justify-content: flex-end;
+/*---------------------------------------------------------------*/
+header{
+  position: -webkit-sticky; 
+  position: sticky;
+  top: 0; 
+  z-index:4;
+  transition: height 0.5s ease;
+}
+.sticky-header.scrolled {
+  height: 50px;
+}
+header.sticky-header {
+  transition: height 0.5s ease;
+}
+.sticky-header.scrolled #logo img {
+  display: none;
+  transition: height 0.5s ease;
 }
 
 
-/* --- LOGO HEADER --- */
 
-
+/*---------------------------------------------------------------*/
 /*===============================================*/
 /*    PORTADA                                    */
 /*===============================================*/

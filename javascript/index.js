@@ -1,27 +1,27 @@
 //Javasript para menu hamburguesa //////////////////////////////////////////////////////////////////////////
-// Obtener referencias a los elementos del DOM
 const hamburguerBtn = document.getElementById('hamburguer-btn');
-const navegador = document.getElementById('navegador');
+const navegador = document.getElementById('nav');
 const listaItems = navegador.getElementsByTagName('li');
 
-// Función para alternar la visibilidad del menú al hacer clic en el botón hamburguesa
+// Agregar la clase "hamburguesa--cerrado" al botón hamburguesa
+hamburguerBtn.classList.add('hamburguesa--cerrado');
+
 function toggleMenu() {
   navegador.classList.toggle('mostrar');
+  hamburguerBtn.classList.toggle('hamburguesa--cerrado');
 }
 
-// Función para ocultar el menú al hacer clic en un elemento de la lista
 function hideMenu() {
   navegador.classList.remove('mostrar');
 }
 
-// Función para ocultar el menú al hacer clic fuera de él
 function hideMenuOutside(event) {
   if (!navegador.contains(event.target) && !hamburguerBtn.contains(event.target)) {
     navegador.classList.remove('mostrar');
+    hamburguerBtn.classList.add('hamburguesa--cerrado');
   }
 }
 
-// Agregar eventos click a los elementos correspondientes
 hamburguerBtn.addEventListener('click', toggleMenu);
 
 for (let i = 0; i < listaItems.length; i++) {
@@ -29,6 +29,19 @@ for (let i = 0; i < listaItems.length; i++) {
 }
 
 document.addEventListener('click', hideMenuOutside);
+
+// JAVASCRIPT PARA STICKY HEADER //////////////////////////////////////////////////////////////////////////////
+const header = document.getElementById('cabecera');
+
+window.addEventListener('scroll', () => {
+  if (window.pageYOffset > 0) {
+    header.classList.add('scrolled');
+  } else {
+    header.classList.remove('scrolled');
+  }
+});
+
+
 
 
 
