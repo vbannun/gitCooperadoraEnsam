@@ -80,7 +80,7 @@ body {
 /* --- NAVEGADOR --- */
 #nav {
   padding-bottom: 0;
-}
+ }
 .top_menu{
   height: 44px;
   letter-spacing: 0;
@@ -91,6 +91,10 @@ body {
   font-weight: 600;
   font-size: var(--font-size-m);
   margin: 0 auto;
+  background-image: url(../img/lineaDivisor.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: center;
 }
 .top_menu ul{
   margin: 0 auto;
@@ -99,10 +103,12 @@ body {
   height: 44px;
   width: 120px;
   line-height: 44px;
-  background-image: url(./img/line-1.svg);
+  background-image: url(../img/lineaDivisor.png);
   background-repeat: no-repeat;
   background-position-x: left;
+  background-position-y: center;
 }
+
 .top_menu li:hover{
   color: var(--celeste);
 }
@@ -116,6 +122,10 @@ body {
 }
 #navegador li {
   list-style: none;
+}
+#navegador li a {
+  padding: 0 10px;
+  height: 100%;
 }
 
 /* --- IMAGENES NAVEGADOR --- */
