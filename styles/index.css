@@ -37,6 +37,32 @@ body {
 .cookieScript { 
   font-family: var(--font-family-cookie);
 }
+
+
+
+.textoGeneralNegro {
+  color: var(--black)
+}
+h1 {
+  font-family: var(--font-family-montserrat);
+  font-weight: 700;
+  font-size: var(--font-size-xxxl);
+}
+h2 {
+  font-family: var(--font-family-montserrat);
+  font-weight: 700;
+  font-size: var(--font-size-xxl);
+  text-align: center;
+}
+h3 {
+  font-family: var(--font-family-montserrat);
+  font-weight: 600;
+  font-size: var(--font-size-xl);
+}
+
+
+
+
 /* --- CONTEDENOR Y FONDOS --- */
 .contenedor {
   max-width: 1000px;
@@ -97,6 +123,13 @@ body {
   font-size: var(--font-size-m);
   margin: 0 auto;
 
+/* Virshi*/
+  background-image: url(../img/lineaDivisor.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: center;
+
+
 }
 .top_menu ul{
   margin: 0 auto;
@@ -105,6 +138,12 @@ body {
   height: 44px;
   width: 120px;
   line-height: 44px;
+
+
+  background-image: url(../img/lineaDivisor.png);
+  background-repeat: no-repeat;
+  background-position-x: left;
+  background-position-y: center;
 }
 .top_menu li:hover{
   color: var(--celeste);
@@ -123,24 +162,108 @@ body {
 #navegador li {
   list-style: none;
 }
-/* --- LOGO HEADER --- */
+/*Virshi*/
+#navegador li a {
+  padding: 0 10px;
+  height: 100%;
+}
 
-/*===============================================*/
-/*    PORTADA */   
-.contenedor {
+/* --- IMAGENES NAVEGADOR --- */
+.header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#logo img {
+  height: 50px;
+  margin-right: 10px;
+}
+/* --- MENU HAMBURGUESA --- */
+.navegador1 :open{
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  max-width: 1200px; /* Ajustar? */
-  margin: 0 auto;
-  padding: 20px;
+  height: 100%;
+  z-index: 1;
+}
+.navegador1{
+  padding-top: 0;
+}
+#hamburguer-btn {
+  background-image: url(../img/hamburger-icon.png);
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position:50%;
+  background-color: var(--azuloscuro);
+  height: 44px;
+  width: 44px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  border: 1.5px solid var(--azulclaro);
 }
 
 
-#portada {
-  position: relative;
-  background-size: cover;
-  background-position: center;
+#hamburguer-btn:hover {
+  cursor: pointer;
+  background-color: var(--celeste);
+  box-shadow: inset 0px 2px 6px rgba(28, 32, 61, 0.71);
+}
+.navMobile {
+  float: right;
+  padding-right: 20px;
+}
+
+/*---------------------------------------------------------------*/
+header{
+  position: -webkit-sticky; 
+  position: sticky;
+  top: 0; 
+  z-index:4;
+  transition: height 0.5s ease;
+}
+.sticky-header.scrolled {
+  height: 50px;
+}
+header.sticky-header {
+  transition: height 0.5s ease;
+}
+.sticky-header.scrolled #logo img {
+  display: none;
+  transition: height 0.5s ease;
+}
+
+
+
+
+
+
+/*===============================================*/
+/*    PORTADA */   
+body {
+  overflow-x: hidden;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.bgBanner {
   background-image: url(../img/rectangle-2.png);
-  
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 60%; 
+}
+
+#portada {
+  min-height: 38em;
+  height: auto;
+}
+#portada .bgBanner img {
+  max-width: 100%;
+  height: auto;
 }
 
 .pieDeBanner {
@@ -188,6 +311,68 @@ body {
   
 }
 
+/*.contenedor {
+  width: 100%;
+  max-width: 1200px; /* Ajustar? */
+ /* margin: 0 auto;
+  padding: 20px;
+}
+
+
+#portada {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../img/rectangle-2.png);
+  
+}
+
+
+.pieDeBanner {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.elementoPortada1 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  font-family: var(--font-family-montserrat);
+}
+
+.elementoPortada1 h1 {
+  margin: 0;
+  font-size: var(--font-size-xxl);
+  font-weight: bold;
+}
+
+.elementoPortada1 p {
+  margin: 10px 0 0;
+  font-family: var(--font-family-cookie);
+  font-size: var(--font-size-xl);
+}
+
+
+.elementoPortada2 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  
+}
+
+.elementoPortada2 img {
+  max-width: 50%;
+  height: auto;
+  margin-top: 300px;
+  
+}
+*/
 
 
 
