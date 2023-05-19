@@ -24,11 +24,19 @@
   --font-family-rouge_script-regular: "Rouge Script", Helvetica;
   --font-family-cookie: "cookie", cursive;
 }
+
 body {
-  margin: 0 0;
+  overflow-x: hidden;
 }
 
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+/*===============================================*/
 /* --- TITULOS Y TEXTOS --- */
+/*===============================================*/
 .textoGeneralBlanco{
   color: var(--blanco);
   font-family: var(--font-family-montserrat);
@@ -37,8 +45,6 @@ body {
 .cookieScript { 
   font-family: var(--font-family-cookie);
 }
-
-
 
 .textoGeneralNegro {
   color: var(--black)
@@ -60,10 +66,9 @@ h3 {
   font-size: var(--font-size-xl);
 }
 
-
-
-
+/*===============================================*/
 /* --- CONTEDENOR Y FONDOS --- */
+/*===============================================*/
 .contenedor {
   max-width: 1000px;
   justify-content: center;
@@ -75,8 +80,7 @@ h3 {
 .alinearArriba {
   align-items: flex-start;
 }
-.contenedorDoble {
-  
+.contenedorDoble {  
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -86,6 +90,7 @@ h3 {
 .gridContenedorSimple{
   align-items: center;
 }
+
 .bgAzul {
   background-color: var(--azuloscuro);
   color: var(--blanco);
@@ -104,17 +109,14 @@ h3 {
 }
 
 /*===============================================*/
-/*    HEADER                                     */
-/*===============================================*/
-
 /* --- NAVEGADOR --- */
+/*===============================================*/
 #nav {
   padding-bottom: 0;
 }
 .top_menu{
   height: 44px;
-  letter-spacing: 0;
-  
+  letter-spacing: 0;  
   display: flex;
   justify-content: right;
   text-align: center;
@@ -122,14 +124,10 @@ h3 {
   font-weight: 600;
   font-size: var(--font-size-m);
   margin: 0 auto;
-
-/* Virshi*/
   background-image: url(../img/lineaDivisor.png);
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: center;
-
-
 }
 .top_menu ul{
   margin: 0 auto;
@@ -138,8 +136,6 @@ h3 {
   height: 44px;
   width: 120px;
   line-height: 44px;
-
-
   background-image: url(../img/lineaDivisor.png);
   background-repeat: no-repeat;
   background-position-x: left;
@@ -148,9 +144,6 @@ h3 {
 .top_menu li:hover{
   color: var(--celeste);
 }
-
-
-
 .top_menu a {
   text-decoration: none;
   color: var(--celesteclaro);
@@ -162,13 +155,14 @@ h3 {
 #navegador li {
   list-style: none;
 }
-/*Virshi*/
+
 #navegador li a {
   padding: 0 10px;
   height: 100%;
 }
-
+/*===============================================*/
 /* --- IMAGENES NAVEGADOR --- */
+/*===============================================*/
 .header-flex {
   display: flex;
   align-items: center;
@@ -204,7 +198,6 @@ h3 {
   border: 1.5px solid var(--azulclaro);
 }
 
-
 #hamburguer-btn:hover {
   cursor: pointer;
   background-color: var(--celeste);
@@ -215,7 +208,9 @@ h3 {
   padding-right: 20px;
 }
 
-/*---------------------------------------------------------------*/
+/*===============================================*/
+/*    HEADER                                     */
+/*===============================================*/
 header{
   position: -webkit-sticky; 
   position: sticky;
@@ -234,21 +229,9 @@ header.sticky-header {
   transition: height 0.5s ease;
 }
 
-
-
-
-
-
 /*===============================================*/
 /*    PORTADA */   
-body {
-  overflow-x: hidden;
-}
-
-body, html {
-  margin: 0;
-  padding: 0;
-}
+/*===============================================*/
 
 .bgBanner {
   background-image: url(../img/rectangle-2.png);
@@ -257,14 +240,11 @@ body, html {
   background-position: 60%; 
 }
 
-#portada {
+#portada .bgBanner img {
+  max-width: 100%;
   min-height: 38em;
   height: auto;
 }
-#portada .bgBanner img {
-  max-width: 100%;
-  height: auto;
-}
 
 .pieDeBanner {
   display: flex;
@@ -296,7 +276,6 @@ body, html {
   font-size: var(--font-size-xl);
 }
 
-
 .elementoPortada2 {
   display: flex;
   justify-content: flex-end;
@@ -310,79 +289,14 @@ body, html {
   margin-top: 300px;
   
 }
-
-/*.contenedor {
-  width: 100%;
-  max-width: 1200px; /* Ajustar? */
- /* margin: 0 auto;
-  padding: 20px;
-}
-
-
-#portada {
-  position: relative;
-  background-size: cover;
-  background-position: center;
-  background-image: url(../img/rectangle-2.png);
-  
-}
-
-
-.pieDeBanner {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  height: 100%;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-.elementoPortada1 {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-end;
-  font-family: var(--font-family-montserrat);
-}
-
-.elementoPortada1 h1 {
-  margin: 0;
-  font-size: var(--font-size-xxl);
-  font-weight: bold;
-}
-
-.elementoPortada1 p {
-  margin: 10px 0 0;
-  font-family: var(--font-family-cookie);
-  font-size: var(--font-size-xl);
-}
-
-
-.elementoPortada2 {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  
-}
-
-.elementoPortada2 img {
-  max-width: 50%;
-  height: auto;
-  margin-top: 300px;
-  
-}
-*/
-
-
 
 /*===============================================*/
-
-
-
 /* --- IMAGEN FONDO --- */
+/*===============================================*/
 
+/*===============================================*/
 /* --- PIE E IMAGEN LOGO PORTADA --- */
+/*===============================================*/
 
 /*===============================================*/
 /*    NOSOTROS                                   */
@@ -399,15 +313,10 @@ body, html {
   font-family: var(--font-family-montserrat);
   font-size: var(--font-size-l);
 }
-.spancargos{
-  color: var(--azulclaro);
-  font-weight: bold;
-}
 
 h4.celesteClaro {
   color: var(--azulclaro);
-  
-  
+    
 }
 h4.textTitulares{
   font-family: var(--font-family-montserrat);
@@ -426,6 +335,18 @@ section.textDosColumnas{
   column-count: 2;
 }
 
+.textoNombresCargos {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dos columnas con ancho igual */
+  gap: 10px; /* Espacio entre elementos */
+}
+
+.spancargos {
+  display: block; /* Convertir el span en un elemento de bloque */
+  color: var(--azulclaro);
+  font-weight: bold;
+}
+
 /*===============================================*/
 /*    ACCIONES                                   */
 /*===============================================*/
@@ -434,6 +355,7 @@ section.textDosColumnas{
   margin-bottom: 20px;
   font-family: var(--font-family-montserrat);
 }
+
 .alinearArriba {
   vertical-align: top;
 }
@@ -452,13 +374,14 @@ section.textDosColumnas{
 
 /*===============================================*/
 /*   VER QUE EN ACCIONES NO QUEDA BIEN DIVIDIDO POR 2 COLUMNAS   */
-
-
-
 /*===============================================*/
 /*    SOCIOS/AS                                  */
 /*===============================================*/
 /* --- BOTONES --- */
+#botonSocios{
+  display: block;
+  margin: 0 auto;
+}
 .botonPrimario {
   background-color: var(--azulclaro);
   color: var(--blanco);
@@ -470,8 +393,8 @@ section.textDosColumnas{
   font-size: var(--font-size-m);
   font-weight:600;
   transition: all 0.2s ease;
- 
-  
+
+   
 }
 .botonPrimario:hover,
 .botonPrimario:focus {
@@ -490,7 +413,13 @@ section.textDosColumnas{
   font-size: var(--font-size-m);
   font-weight:600;
   transition: all 0.2s ease;
+  
 }
+.botonSecundario button{
+  margin: 0 auto;
+  display: block;
+}
+
 .botonSecundario:hover,
 .botonSecundario:focus {
   cursor: pointer;
@@ -547,6 +476,7 @@ section.textDosColumnas{
 
 /*===============================================*/
 /*    CAMPAÑAS      */      
+/*===============================================*/
 
 .boxDoble img {
   max-width: 100%;
@@ -554,8 +484,7 @@ section.textDosColumnas{
   object-fit: cover;
   border-radius: 10px; 
   border: 1px solid #000;
-}
-/*===============================================*/
+  }
 
 /*===============================================*/
 /*    CONTACTO                                   */
@@ -588,11 +517,7 @@ section.textDosColumnas{
 }
 
 /* --- DISTRIBUCIÓN LINEAL --- */
-.redesSociales {
-  display: flex;
-  justify-content: left;
-  gap: 10px;
-}
+
 /* --- FORMULARIO --- */
 #consultaEnsam input {
   width: 80%;
@@ -629,9 +554,6 @@ textarea::placeholder {
   margin: 0 auto;
   display: block;
 }
-
-
-
 
 /*===============================================*/
 /*    FOOTER                                     */
