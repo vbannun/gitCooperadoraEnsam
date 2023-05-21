@@ -361,17 +361,20 @@ header.sticky-header {
   color: var(--blanco);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border: none;
-  font-size: var(--font-size-m);
+  font-size: var(--font-size-xl);
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 0.2s ease;
+  text-decoration: none;
+  line-height: 0.7;
 }
 
 .botonRedes:hover {
   background-color: var(--celeste);
   box-shadow: inset 0px 2px 6px rgba(28, 32, 61, 0.71);
+  transform: rotate(-30deg) scale(1.1);
 }
 
 /* --- DISTRIBUCIÓN LINEAL --- */
