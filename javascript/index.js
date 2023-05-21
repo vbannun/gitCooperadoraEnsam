@@ -104,6 +104,6 @@ form.addEventListener('submit', (e) => {
 });
 
 // Agregar el evento 'click' al botón de cerrar del modal
-document.querySelector('.cerrar').addEventListener('click', () => {
+document.querySelector('.cerrar-modal').addEventListener('click', () => {
   document.getElementById('modalContacto').style.display = 'none';
 });

@@ -30,6 +30,21 @@
   .textDosColumnas p{
     margin: 0;
   }
+  .boxDoble {
+    flex-basis: auto;
+  }
+  #consultaEnsam input {
+    width: 100%;
+  }
+  #consultaEnsam textarea {
+    width: 100%;
+  }
+  #consultaEnsam select{
+    width: 100%;
+  }
+  .redesSociales {
+    justify-content: center;
+  }
 }
 
 @media (min-width: 1025px) {
