@@ -12,7 +12,7 @@
   --negro: #00050a;
   --white: #ffffff;
  
-  --font-size-l: 17px;
+  --font-size-l: 20px;
   --font-size-m: 16px;
   --font-size-s: 12px;
   --font-size-xl: 24px;
@@ -24,6 +24,9 @@
 }
 body {
   margin: 0 0;
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-m);
+  font-weight: 400;
 }
 
 /* --- TITULOS Y TEXTOS --- */
@@ -35,6 +38,9 @@ body {
 }
 .textoGeneralNegro {
   color: var(--black)
+}
+.textoAzulClaro {
+  color: var(--azulclaro);
 }
 h1 {
   font-family: var(--font-family-montserrat);
@@ -52,6 +58,11 @@ h3 {
   font-weight: 600;
   font-size: var(--font-size-xl);
 }
+h4 {
+  font-family: var(--font-family-montserrat);
+  font-weight: 900;
+  font-size: var(--font-size-l);
+}
 /* --- CONTEDENOR Y FONDOS --- */
 .contenedor {
   max-width: 1000px;
@@ -59,7 +70,7 @@ h3 {
   align-items: center;
   margin: 0 auto;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
 }
 .contenedorDoble {
   display: flex;
@@ -240,7 +251,20 @@ header.sticky-header {
 /*===============================================*/
 /*    NOSOTROS                                   */
 /*===============================================*/
-
+.cargos {
+  color: var(--azulclaro);
+  font-weight: 600;
+}
+.textDosColumnas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.textTitulares {
+  color: var(--azulclaro);
+}
 /*===============================================*/
 /*    ACCIONES                                   */
 /*===============================================*/
@@ -266,6 +290,8 @@ header.sticky-header {
   font-size: var(--font-size-m);
   font-weight:600;
   transition: all 0.2s ease;
+  margin: 0 auto;
+  display: block;
 }
 .botonPrimario:hover,
 .botonPrimario:focus {
@@ -284,6 +310,7 @@ header.sticky-header {
   font-size: var(--font-size-m);
   font-weight:600;
   transition: all 0.2s ease;
+  text-decoration: none;
 }
 .botonSecundario:hover,
 .botonSecundario:focus {
