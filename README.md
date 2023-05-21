@@ -8,12 +8,14 @@ Hemos elegido concretar el proyecto de la página web para la asociación cooper
 
 - [Proceso](#proceso)
 - [Características](#características)
+- [Instalación](#instalación)
+- [Autoras](#autoras)
 - [Licencia](#licencia)
 
 ## Proceso
 
 En primer lugar se han evaluado las necesidades comunicacionales de la Cooperadora, relevando las areas que debian cubrirse. Con esta informacion se bosquejo en Figma una propuesta de diseño:
-`https://www.figma.com/proto/Ujee7RAaxVqnUbXyDa7Cmu/cooperadoraensam?type=design&node-id=6-55&scaling=min-zoom&page-id=3%3A13&starting-point-node-id=6%3A55`
+[Prototipo] (https://www.figma.com/proto/Ujee7RAaxVqnUbXyDa7Cmu/cooperadoraensam?type=design&node-id=6-55&scaling=min-zoom&page-id=3%3A13&starting-point-node-id=6%3A55)
 
 ![figma](./img/base_web_cooperadora.jpg)
 
@@ -33,6 +35,15 @@ A este diseño se le analizarón las clases y secciones, separando y pensando co
 - El diseño es totalmente responsive en tres cotas minimas
 - Se incorporó un iframe de googlemaps
 - Como api tomamos el uso del recaptcha en el formulario
+
+
+## Autoras
+
+⌨️ con ❤️ por:
+[vbannun](https://github.com/vbannun) Virginia B Annun
+[SheilaAguirreRivas] (https://github.com/SheilaAguirreRivas) Sheila Aguirre Rivas
+😊 
+
 
 ## Licencia
 
