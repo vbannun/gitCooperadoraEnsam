@@ -27,6 +27,9 @@
   .header-flex {
     padding: 5px;
   }
+  .textDosColumnas p{
+    margin: 0;
+  }
 }
 
 @media (min-width: 1025px) {
