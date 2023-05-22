@@ -287,6 +287,8 @@ header.sticky-header {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  flex-basis: calc(50% - 10px);
+  margin-bottom: 20px
 }
 .textTitulares {
   color: var(--azulclaro);
@@ -400,9 +402,6 @@ header.sticky-header {
 /*===============================================*/
 /*    CAMPAÑAS                                   */
 /*===============================================*/
-.boxDoble {
-
-}
 .boxDoble img{
   max-width: 100%;
   height: auto;
@@ -469,6 +468,7 @@ textarea::placeholder {
 }
 #consultaEnsam select{
   width: 84%;
+  height: 27px;
   padding: 10px 15px;
   border-radius: 10px;
   border: 1.5px solid var(--azulclaro);
