@@ -487,7 +487,15 @@ textarea::placeholder {
 /*===============================================*/
 #footer {
   margin-top: auto;
-
+}
+.linksFooter {
+  color: var(--celesteclaro);
+  text-decoration: none;
+  font-size: var(--font-size-m);
+  font-weight: 600;
+  display: flex;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 
