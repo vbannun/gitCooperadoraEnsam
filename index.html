@@ -8,9 +8,7 @@
   <title>Cooperadora Ensam</title>
 
   <!-- FAVICON PARA CUALQUIER NAVEGADOR -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/themify-icons@latest/css/themify-icons.css">
-
-	<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+  	<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
 	<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
  
 	<!-- FAVICON IPAD Y IPHONE -->
@@ -25,25 +23,20 @@
   <link rel="stylesheet" href="./styles/responsive.css">
 
   <!-- Iconos -->
-  <link rel="stylesheet" href="./fonts/themify-icons.css">
-
+  
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
   <!-- Google Fonts -->  
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,600" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Andalus" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
-
 
 </head>
 
 <body>  
   <!-- Header -->
-  <section id="header" class="bgAzul">
+  
    <header id="cabecera" class="sticky-header"> 
       <section id="header" class="bgAzul">
         <section id="logo" class="contenedor header-flex logoMobile"> <!--la clase contenedor debe adaptarse a diferentes tamaños de pantallas -->
@@ -67,22 +60,24 @@
         </ul>
       </section>
       </section>
-      </section>
-        </section>
+    
     </header>
-  <section id="portada" class="bgAzul bgBanner">
-    <section class="contenedor">
-      <section class="pieDeBanner gridContainerPorcentual">
-        <section class="elementoPortada1">
-          <h1>Asociación Cooperadora<br>Unidad Académica<br>Antonio Mentruyt</h1>
-          <p>Por amor a Nuestra Escuela, a Nuestras Familias y a la Educación Pública</p>
+     <!-- Portada -->
+    <section id="portada" class="bgAzul bgBanner"> <!--en esta clase va la imagen de fondo -->
+      <section class="contenedor contenedorPortada">
+        <section class="pieDeBanner gridContainerPorcentual"> 
+          <section class="elementoPortada1"> <!--acá determinar tamaños y porcentajes según tamaño de pantallas 70/30 -->
+            <h1 class="alignTextTop">Asociación Cooperadora<br/>Unidad Académica<br/>Antonio Mentruyt</h1>
+            <p class="cookieScript alignTextBottom">Por amor a Nuestra Escuela, a Nuestras Familias y a la Educación Pública</p> 
           </section>
-          <section class="elementoPortada2">
-          <img src="./img/rectangle-6@2x.png" alt="Logo Ensam">
-        </section>
-      </section>
+          <section class="elementoPortada2"> <!--acá determinar tamaños y porcentajes según tamaño de pantallas 70/30 -->
+            <img src="./img/logoColor.png" alt="Logo Ensam">
+          </section>        
+        </section>  
+      </section>     
     </section>
-  </section>
+    
+
   <!-- Main -->    
   <main>
     <!-- Nosotros -->
@@ -93,29 +88,28 @@
         </section>
         <section class="gridContenedorSimple">
             <p class="textoGeneralNegro">
-              Nuestra historia se remonta a 1957, cuando un grupo de padres y maestros comprometidos se unió con un objetivo en común: brindar un apoyo sólido a la educación de nuestros estudiantes y contribuir al crecimiento de nuestra comunidad escolar.
-  
-              Desde entonces, hemos trabajado incansablemente para marcar una diferencia significativa en la vida de nuestros estudiantes y fortalecer los lazos entre la escuela, los padres y la comunidad. A lo largo de los años, hemos logrado grandes avances y alcanzado metas importantes, gracias al esfuerzo y la dedicación de todos los que formamos parte de esta Cooperadora Escolar.
-            </p>
+              La Cooperadora es una asociación sin fines de lucro, conformada por un grupo de familias, estudiantes, profes, y el apoyo de los directivos, que trabajan voluntariamente, con el objetivo de mejorar las condiciones educativas.
+La Asociación Cooperadora del ENSAM tiene una larga historia que data desde 1957, pasó por diversas situaciónes en las que hubo momentos de mucha actividad y otros en los que no tanto, hasta que se disolvió.
+Se logró, luego de mucho esfuerzo, que la comisión reorganizadora que se congregara a fines del 2017, pudiera por fin en el 2018 conformar la nueva Asociación Cooperadora para el ENSAM.</p>
           <h4 class="celesteClaro textTitulares">Integrantes</h4> <!-- la clase TextTitulares tendra padding top/botoom -->
           <section class="textoNombresCargos textDosColumnas"> <!-- la clase TextDosColumnas style="-webkit-column-count: 2; -moz-column-count: 2; column-count: 2;" -->
             <p>
-              <span class="spancargos">Presidenta</span> Paola Guzmán<br/>
-              <span class="spancargos">Secretaria</span> Natalia Lissarrague<br/>
-              <span class="spancargos">Tesorera</span> María Gabriela González<br/>
-              <span class="spancargos">Vocal 1 titular</span> Micaela Dominguez Caetano<br/>
-              <span class="spancargos">Vocal 1 suplente</span> Christian Lopez<br/>
-              <span class="spancargos">Vocal 2 titular</span> Mirtha Susana Gonzalez<br/>
-              <span class="spancargos">Vocal 2 suplente</span> Gloria Mabel Abelleira<br/>
+              <span class="cargos">Presidenta</span> Paola Guzmán<br/>
+              <span class="cargos">Secretaria</span> Natalia Lissarrague<br/>
+              <span class="cargos">Tesorera</span> María Gabriela González<br/>
+              <span class="cargos">Vocal 1 titular</span> Micaela Dominguez Caetano<br/>
+              <span class="cargos">Vocal 1 suplente</span> Christian Lopez<br/>
+              <span class="cargos">Vocal 2 titular</span> Mirtha Susana DeNegri<br/>
+              <span class="cargos">Vocal 2 suplente</span> Gloria Mabel Abelleira<br/>
             </p>
             <p>
-              <span class="spancargos">Vocal 3 titular</span> Laira Vallejos<br/>
-              <span class="spancargos">Vocal 3 suplente</span> Liliana Bogado<br/>
-              <span class="spancargos">Vocal 4 titular</span> Virginia Bernadette Annun<br/>
-              <span class="spancargos">Vocal 4 suplente</span> Fernanda Aguilar<br/>
-              <span class="spancargos">Revisor de Cuentas docente</span> Claudia García<br/>
-              <span class="spancargos">Revisor de Cuentas titular</span> Emilio Perez<br/>
-              <span class="spancargos">Revisor de Cuentas suplente</span> Juan Manuel Latorre<br/>	
+              <span class="cargos">Vocal 3 titular</span> Laira Vallejos<br/>
+              <span class="cargos">Vocal 3 suplente</span> Liliana Bogado<br/>
+              <span class="cargos">Vocal 4 titular</span> Virginia Bernadette Annun<br/>
+              <span class="cargos">Vocal 4 suplente</span> Fernanda Santillan<br/>
+              <span class="cargos">Revisor de Cuentas docente</span> Claudia García<br/>
+              <span class="cargos">Revisor de Cuentas titular</span> Emilio Lopez<br/>
+              <span class="cargos">Revisor de Cuentas suplente</span> Juan Manuel Latorre<br/>	
             </p>
           </section>
         </section>
@@ -132,50 +126,18 @@
       <section class="contenedor">
         <section class="gridContenedorSimple">
           <h2 class="textoCelesteClarito">Acciones</h2>
-        </section> 
-        <!--Cambié doble columna por una simple-->
-        <section class="gridContenedorSimple textoGeneralBlanco">
+        </section>
+        <section class="textDosColumnas textoGeneralBlanco">
           <h3 class="textoCelesteClaro">¿Qué hacemos?</h3>
           <p>
-            En nuestra Cooperadora Escolar, nos apasiona brindar apoyo y contribuir al desarrollo y bienestar de nuestra comunidad educativa. Nuestra misión es promover una educación de calidad y garantizar que nuestros estudiantes tengan las mejores oportunidades para aprender, crecer y alcanzar su máximo potencial.
-
-            Aquí te presentamos algunas de las actividades y servicios que llevamos a cabo para lograr nuestros objetivos:
-            <ul>
-  
-            <li>Recaudación de fondos: Organizamos diversas actividades y eventos para recaudar fondos destinados a mejorar las instalaciones escolares, adquirir equipos y materiales educativos, y financiar proyectos especiales.</li>
-  
-            <li>Mejora de infraestructuras: Trabajamos en estrecha colaboración con la dirección y el personal docente para identificar las necesidades de infraestructura de la escuela.</li>
-  
-            <li>Programas educativos complementarios: Promovemos programas educativos y extracurriculares que enriquecen la experiencia de aprendizaje de nuestros estudiantes. Estos programas pueden incluir talleres de arte, música, deportes, ciencias y tecnología.</li>
-  
-            <li>Becas y ayudas económicas: Trabajamos arduamente para establecer un fondo de becas y ayudas económicas para estudiantes que enfrentan dificultades financieras.</li>
-  
-            <li>Colaboración con la comunidad: Fomentamos la colaboración entre la escuela, los padres, los maestros y la comunidad en general.</li>
-            </ul>
-            ¡Te invitamos a unirte a nosotros y formar parte de este apasionante proyecto!
+            La Asociación Cooperadora nos convoca para fortalecer y apoyar a nuestro querido ENSAM. Como miembros orgullosos de esta comunidad educativa, nos esforzamos por crear un entorno acogedor y brindar recursos de calidad a todas las personas que forman parte de nuestra escuela. Trabajamos en colaboración con directivos, docentes, familias, y estudiantes para mejorar la experiencia educativa y asegurar que cada individuo tenga oportunidades enriquecedoras de aprendizaje. Somos una gran familia unida por el objetivo común de hacer de nuestra escuela un lugar inspirador, acogedor y lleno de posibilidades. Fomentamos el sentimiento de pertenencia y animamos a todos y todas a participar activamente. Nos enorgullece formar parte del legado de la escuela pública y contribuir a la formación de futuras generaciones. Creemos en el poder transformador de la educación y en el impacto positivo que podemos lograr si aunamos nuestra fuerza. Nuestra escuela no es solo un edificio, es un hogar donde cultivamos el amor por el conocimiento, la solidaridad y el respeto. Unidos y unidas, construimos un futuro brillante para nuestros estudiantes y nuestra comunidad.
           </p>
-
-         
           <h3 class="textoCelesteClaro">¿Cómo hacemos?</h3>
           <p>
-            En esta sección, queremos compartir contigo cómo llevamos a cabo nuestras actividades y proyectos para lograr nuestros objetivos en beneficio de la comunidad educativa. A continuación, te presentamos los pasos que seguimos:
-            <ul>
-              <li>Identificación de necesidades: Trabajamos estrechamente con la dirección de la escuela, los maestros y los padres para identificar las necesidades más apremiantes.</li>
-            
-              <li>Planificación estratégica: Una vez que identificamos las necesidades, elaboramos un plan estratégico que establece nuestras metas a corto y largo plazo.</li>
-            
-              <li>Organización de equipos de trabajo: Creamos equipos de trabajo conformados por miembros de la Cooperadora Escolar, padres, maestros y voluntarios interesados en contribuir.</li>
-            
-              <li>Captación de recursos: Para financiar nuestras iniciativas, llevamos a cabo campañas de recaudación de fondos.</li>
-            
-              <li>Colaboración con la comunidad: Buscamos establecer alianzas estratégicas con la comunidad local, empresas y organizaciones.</li>
-            
-              <li>Seguimiento y evaluación: Realizamos un seguimiento constante de nuestras actividades y proyectos para evaluar su impacto y eficacia.</li>
-           </ul>
-            Estos son los pasos fundamentales que seguimos en nuestra Cooperadora Escolar para llevar a cabo nuestras actividades y proyectos.</li>
-            
-            ¡Te invitamos a unirte a nosotros y ser parte de este maravilloso equipo! Juntos, podemos hacer la diferencia y construir un futuro brillante para nuestros estudiantes.
-  
+            A través de actividades, eventos y proyectos, buscamos recaudar fondos y recursos para cubrir necesidades educativas, mejoras en la infraestructura y programas extracurriculares que enriquezcan la experiencia de nuestros estudiantes.
+Los fondos que administra la cooperadora provienen del pago de la cuota societaria, de la venta de cuadernos de comunicaciones, del canon que abona el concesionario del buffet, subsidios que a veces otorga el Estado y donaciones voluntarias; así como también de las actividades como ferias del plato, y otros eventos y proyectos que posibilitan el ingreso de dinero.
+Cada integrante tiene un rol activo y bien establecido sobre sus competencias en la cooperadora. Estas competencias se establecen desde el primer día, por medio del debate y la votación. Procuramos que la colaboración de los y las cooperadoras sea equitativa y liviana, para que el trabajo sea ameno y sobre todo se pueda llevar a cabo con disfrute y amor. Por ello el dialogo es nuestro principal recurso.
+
           </p>
         </section>
       </section>
@@ -220,14 +182,13 @@
         <section class="contenedorDoble">
           <section class="boxDoble">
             <h3 class="textoCelesteClaro">Compra de insumos</h3>
-            <p class="textoGeneralBlanco">
-            
+            <p class="textoGeneralBlanco">            
               El objetivo de esta campaña es recaudar fondos para adquirir una amplia variedad de insumos educativos, tales como libros de texto, material didáctico, equipos audiovisuales,
               recursos tecnológicos y material escolar básico. Estos insumos son fundamentales para enriquecer el proceso de aprendizaje de nuestros estudiantes y brindarles las herramientas necesarias para su desarrollo académico.</p><br/><br/> 
-              <a href="#" target="_blank"><button class="botonSecundario">Donar para esta campaña</button></a>
+              <a href="#" target="_blank" class="botonSecundario">Donar para esta campaña</a>
           </section>
           <section class="boxDoble">
-            <img src="./img/clases.jpg" alt="campaña insumos">
+            <img src="./img/campana2.jpg" alt="campaña insumos">
           </section>
           <section class="contenedorDoble">
             <section class="boxDoble">
@@ -235,17 +196,17 @@
               <p class="textoGeneralBlanco">
                 En la actualidad, nos encontramos llevando a cabo la campaña "Renovemos nuestras aulas". Esta campaña tiene como propósito recaudar fondos para la renovación y refacción de las aulas de nuestra escuela. 
                 Queremos crear espacios inspiradores que fomenten el aprendizaje y brinden a nuestros estudiantes un entorno acogedor donde puedan desarrollarse plenamente.</p><br/><br/>
-                <a href="#" target="_blank"><button class="botonSecundario">Donar para esta campaña</button></a>
+                <a href="#" target="_blank" class="botonSecundario">Donar para esta campaña</a>
             </section>
             <section class="boxDoble">
-              <img src="./img/refaccionAulas.png" alt="Refacción de aulas">
+              <img src="./img/campana1.jpg" alt="Refacción de aulas">
             </section>
           </section>
         </section>
         <section class="gridContenedorSimple">
           <p class="textoGeneralBlanco">Para ver todas las campañas activas y finalizadas, así como todas las formas en las que podes colaborar, 
             ya sea desde tu profesión u oficio, hacé clic en el botón:</p><br/>
-            <a href="/camapanas.html" target="_blank"><button class="botonSecundario">Ver más</button></a>
+            <a href="/campanas.html" target="_blank" class="botonSecundario">Ver más</a>
         </section>
       </section>
     </section>
@@ -271,7 +232,7 @@
 
                 <label for="asunto">Asunto:</label><br/>
                 <select id="asunto" name="asunto"> 
-                  <option value="consulta">Consulta General</option>
+                  
                   <option value="informacion">Información para asociarme</option>
                   <option value="aportes">Quiero hacer un aporte solidario</option>
                   <option value="coolaborar">Quiero ser colaborador/a</option>
@@ -292,23 +253,19 @@
                   <p>Su consulta se ha enviado correctamente.</p>
                 </div>
               </div>
-                
             </section>
-
           </section>
-
-        
-          <section class="boxDoble">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d26225.708053344693!2d-58.404399505834974!3d-34.750214127949896!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd29b97220dd5%3A0x26bf08cc12c24ceb!2sENSAM!5e0!3m2!1ses-419!2sar!4v1684115079018!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <section class="boxDoble">
+            <iframe width="100%" height="200" src="https://maps.google.com/maps?width=100%25&amp;height=200&amp;hl=en&amp;q=manuel%20Castro%20990,%20banfield,%20buenos%20aires+(Escuela%20Nacional%20Superior%20Antonio%20Mentruyt)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.mapsdirections.info/calcular-ruta.html">Mapa de Ruta</a></iframe><br />
            
             <p class="textoGeneralNegro">Horarios de atención del ISFD: Lunes a viernes de 19 a 21 hs.</p>
             <p class="textoGeneralNegro">Teléfono: 4248-1700</p><!--Shei Fin-->
             <p class="textoGeneralNegro">Manuel Castro 990, Lomas de Zamora<br/>Buenos Aires, Argentina<br/>ensamcooperadora@gmail.com</p>
             <section class="redesSociales">
-              <button class="botonRedes" onclick="window.open('mailto:ensamcooperadora@gmail.com');">e</button>                  
-              <a href="https:/www.facebook.com/cooperadora.ensam" target="_blank"><button class="botonRedes">f</button></a>
-              <a href="https:/www.instagram.com/cooperadoraensam/" target="_blank"><button class="botonRedes">i</button></a>
-
+              
+              <a href="mailto:ensamcooperadora@gmail.com" class="botonRedes"><i class="fi fi-rr-envelope"></i></a>
+              <a href="https://www.instagram.com/cooperadoraensam" target="_blank" class="botonRedes"><i class="fi fi-brands-instagram"></i></a>
+              <a href="https://www.facebook.com/cooperadora.ensam" target="_blank" class="botonRedes"><i class="fi fi-brands-facebook"></i></a>
             </section>
           </section>
         </section>
@@ -319,17 +276,14 @@
   <footer id="footer" role="contentinfo" class="bgAzul">
     <section class="contenedor">
       <section class="gridContenedorSimple">
-        <a href="#" class="linksFooter textoCelesteClarito">Preguntas Frecuentes</a>
+        <a href="./faq.html" class="linksFooter textoCelesteClarito">Preguntas Frecuentes</a>
         <a href="#" class="linksFooter textoCelesteClarito">Política de Privacidad</a>
-
       </section>
     </section>
   </footer>
 
-
   <!-- Scripts -->
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <script src="./javascript/index.js"></script>
-  <script src="./javascript/btnHamburguesa.js"></script>
 </body>
 </html>

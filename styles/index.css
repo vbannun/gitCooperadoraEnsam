@@ -12,7 +12,7 @@
   --negro: #00050a;
   --white: #ffffff;
  
-  --font-size-l: 17px;
+  --font-size-l: 20px;
   --font-size-m: 16px;
   --font-size-s: 12px;
   --font-size-xl: 24px;
@@ -25,21 +25,40 @@
   --font-family-cookie: "cookie", cursive;
 }
 
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  margin: 0 0;
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-m);
+  font-weight: 400;
+}
+
+/*body {
   overflow-x: hidden;
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-m);
+  font-weight: 400;
+  margin: 0;
 }
 
 body, html {
   margin: 0;
   padding: 0;
-}
+}*/
 
 /*===============================================*/
 /* --- TITULOS Y TEXTOS --- */
 /*===============================================*/
 .textoGeneralBlanco{
   color: var(--blanco);
-  font-family: var(--font-family-montserrat);
+ 
 }
 
 .cookieScript { 
@@ -66,6 +85,13 @@ h3 {
   font-size: var(--font-size-xl);
 }
 
+/*Virshi*/
+h4 {
+  font-family: var(--font-family-montserrat);
+  font-weight: 900;
+  font-size: var(--font-size-l);
+}
+
 /*===============================================*/
 /* --- CONTEDENOR Y FONDOS --- */
 /*===============================================*/
@@ -75,10 +101,7 @@ h3 {
   align-items: center;
   margin: 0 auto;
   padding-top: 20px;
-  padding-bottom: 20px;
-}
-.alinearArriba {
-  align-items: flex-start;
+  padding-bottom: 50px;
 }
 .contenedorDoble {  
   display: flex;
@@ -87,6 +110,10 @@ h3 {
   justify-content: space-between;
   align-items: center;
 }
+.alinearArriba {
+  align-items: flex-start;
+}
+
 .gridContenedorSimple{
   align-items: center;
 }
@@ -239,10 +266,13 @@ header.sticky-header {
   background-size: cover;
   background-position: 60%; 
 }
+#portada {
+  min-height: 38em;
+  height: auto;
+}
 
 #portada .bgBanner img {
   max-width: 100%;
-  min-height: 38em;
   height: auto;
 }
 
@@ -284,12 +314,14 @@ header.sticky-header {
 }
 
 .elementoPortada2 img {
-  max-width: 50%;
+  max-width: 100%;
   height: auto;
   margin-top: 300px;
   
 }
-
+.contenedorPortada {
+  align-content: baseline;
+}
 /*===============================================*/
 /* --- IMAGEN FONDO --- */
 /*===============================================*/
@@ -301,50 +333,21 @@ header.sticky-header {
 /*===============================================*/
 /*    NOSOTROS                                   */
 /*===============================================*/
-.textoAzulClaro {
+.cargos {
   color: var(--azulclaro);
-  font-family: var(--font-family-montserrat);
-  font-size: var(--font-size-xxl);
-  text-align: center;
-
-}
-.textoGeneralNegro{
-  color: var(--negro);
-  font-family: var(--font-family-montserrat);
-  font-size: var(--font-size-l);
+  font-weight: 600;
 }
 
-h4.celesteClaro {
-  color: var(--azulclaro);
-    
+.textDosColumnas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
-h4.textTitulares{
-  font-family: var(--font-family-montserrat);
-  font-size: var(--font-size-l);
+.textTitulares {
+  color: var(--azulclaro);
   padding-top: 20px;
-  padding-bottom: 20px;
-}
-section.textoNombresCargos {
-  font-family: var(--font-family-montserrat);
-  font-size: var(--font-size-l);
-  
-}
-section.textDosColumnas{
-  -webkit-column-count: 2; 
-  -moz-column-count: 2; 
-  column-count: 2;
-}
-
-.textoNombresCargos {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* Dos columnas con ancho igual */
-  gap: 10px; /* Espacio entre elementos */
-}
-
-.spancargos {
-  display: block; /* Convertir el span en un elemento de bloque */
-  color: var(--azulclaro);
-  font-weight: bold;
 }
 
 /*===============================================*/
@@ -353,8 +356,7 @@ section.textDosColumnas{
 .boxDoble {
   flex-basis: calc(50% - 10px);
   margin-bottom: 20px;
-  font-family: var(--font-family-montserrat);
-}
+ }
 
 .alinearArriba {
   vertical-align: top;
@@ -373,7 +375,6 @@ section.textDosColumnas{
 }
 
 /*===============================================*/
-/*   VER QUE EN ACCIONES NO QUEDA BIEN DIVIDIDO POR 2 COLUMNAS   */
 /*===============================================*/
 /*    SOCIOS/AS                                  */
 /*===============================================*/
@@ -393,7 +394,8 @@ section.textDosColumnas{
   font-size: var(--font-size-m);
   font-weight:600;
   transition: all 0.2s ease;
-
+  margin: 0 auto;
+  display: block;
    
 }
 .botonPrimario:hover,
@@ -413,13 +415,13 @@ section.textDosColumnas{
   font-size: var(--font-size-m);
   font-weight:600;
   transition: all 0.2s ease;
-  
-}
-.botonSecundario button{
+  text-decoration: none;
+  width: fit-content;
   margin: 0 auto;
   display: block;
+  
+  
 }
-
 .botonSecundario:hover,
 .botonSecundario:focus {
   cursor: pointer;
@@ -483,7 +485,7 @@ section.textDosColumnas{
   height: auto;
   object-fit: cover;
   border-radius: 10px; 
-  border: 1px solid #000;
+  border: 3px solid var(--celeste);
   }
 
 /*===============================================*/
@@ -491,31 +493,34 @@ section.textDosColumnas{
 /*===============================================*/
 
 /* --- BOTON REDES --- */
+.botonRedes {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--azulclaro);
+  color: var(--blanco);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: none;
+  font-size: var(--font-size-xl);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  line-height: 0.7;
+}
+.botonRedes:hover {
+  background-color: var(--celeste);
+  box-shadow: inset 0px 2px 6px rgba(28, 32, 61, 0.71);
+  transform: rotate(-30deg) scale(1.1);
+}
+/* --- DISTRIBUCIÓN LINEAL --- */
 .redesSociales {
   display: flex;
   justify-content: left;
   gap: 10px;
-}  
-
-.botonRedes {
-  display: inline-block;
-  margin: 10px;
-  padding: 10px 20px;
-  border: 1px;
-  background-color: var(--azulclaro);
-  color: var(--blanco);
-  font-size: 20px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  font-family: var(--font-family-montserrat);
-  border-radius: 50%; /* Hace que el botón sea redondo */
 }
-
-.botonRedes:hover {
-  background-color: var(--celeste);
-}
-
 /* --- DISTRIBUCIÓN LINEAL --- */
 
 /* --- FORMULARIO --- */
@@ -557,10 +562,99 @@ textarea::placeholder {
 
 /*===============================================*/
 /*    FOOTER                                     */
+/*============================================== */
+#footer {
+  margin-top: auto;
+}
+.linksFooter {
+  color: var(--celesteclaro);
+  text-decoration: none;
+  font-size: var(--font-size-m);
+  font-weight: 600;
+  display: flex;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
 /*===============================================*/
-a.linksFooter {
-font-family: var(--font-family-montserrat);
-font-size: var(--font-size-l);
+/*    FAQ                                        */
+/*===============================================*/
+#faqID {
+  height:max-content;
+  z-index: 1;
+}
+.faq-header{
+  font-size: var(--font-size-l);
+  border-bottom: 1px dotted var(--azulclaro);
+  padding: 24px;
+}
+
+.faq-content {
+  margin: 0 auto;
+}
+
+.faq-question {
+  padding: 20px 0;
+  border-bottom: 1px dotted var(--azulclaro);
+}
+
+.panel-title {
+  font-size: var(--font-size-l);
+  font-weight: 600;
+  width: 90%;
+  position: relative;
+  margin: 0;
+  padding: 10px 10px 0 25px;
+  display: block;
+  cursor: pointer;
+  color: var(--azuloscuro);
+}
+
+.panel-content {
+  font-size: var(--font-size-m);
+  padding: 0px 14px;
+  margin: 0 30px;
+  height: 0;
+  overflow: hidden;
+  position: relative;
+  opacity: 0;
+  -webkit-transition: .4s ease;
+  -moz-transition: .4s ease;
+  -o-transition: .4s ease;
+  transition: .4s ease;
+  color: var(--azulclaro);
+}
+
+.panel:checked ~ .panel-content{
+  height: auto;
+  opacity: 1;
+  padding: 20px 10px;
+}
+
+.plus {
+  position: absolute;
+  margin-top: 4px;
+  font-size: var(--font-size-xxl);
+  line-height: 1;
+  -webkit-user-select: none;    
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-transition: .2s ease;
+  -moz-transition: .2s ease;
+  -o-transition: .2s ease;
+  transition: .2s ease;
+}
+
+.panel:checked ~ .plus {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.panel {
+  display: none;
 }
 
 
