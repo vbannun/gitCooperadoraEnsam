@@ -22,7 +22,16 @@
   --font-family-montserrat: "Montserrat", Helvetica;
   --font-family-cookie: "cookie", cursive;
 }
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   margin: 0 0;
   font-family: var(--font-family-montserrat);
   font-size: var(--font-size-m);
@@ -476,4 +485,90 @@ textarea::placeholder {
 /*===============================================*/
 /*    FOOTER                                     */
 /*===============================================*/
+#footer {
+  margin-top: auto;
 
+}
+
+
+/*===============================================*/
+/*    FAQ                                        */
+/*===============================================*/
+#faqID {
+  height:max-content;
+  z-index: 1;
+}
+.faq-header{
+  font-size: var(--font-size-l);
+  border-bottom: 1px dotted var(--azulclaro);
+  padding: 24px;
+}
+
+.faq-content {
+  margin: 0 auto;
+}
+
+.faq-question {
+  padding: 20px 0;
+  border-bottom: 1px dotted var(--azulclaro);
+}
+
+.panel-title {
+  font-size: var(--font-size-l);
+  font-weight: 600;
+  width: 90%;
+  position: relative;
+  margin: 0;
+  padding: 10px 10px 0 25px;
+  display: block;
+  cursor: pointer;
+  color: var(--azuloscuro);
+}
+
+.panel-content {
+  font-size: var(--font-size-m);
+  padding: 0px 14px;
+  margin: 0 30px;
+  height: 0;
+  overflow: hidden;
+  position: relative;
+  opacity: 0;
+  -webkit-transition: .4s ease;
+  -moz-transition: .4s ease;
+  -o-transition: .4s ease;
+  transition: .4s ease;
+  color: var(--azulclaro);
+}
+
+.panel:checked ~ .panel-content{
+  height: auto;
+  opacity: 1;
+  padding: 20px 10px;
+}
+
+.plus {
+  position: absolute;
+  margin-top: 4px;
+  font-size: var(--font-size-xxl);
+  line-height: 1;
+  -webkit-user-select: none;    
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-transition: .2s ease;
+  -moz-transition: .2s ease;
+  -o-transition: .2s ease;
+  transition: .2s ease;
+}
+
+.panel:checked ~ .plus {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.panel {
+  display: none;
+}
