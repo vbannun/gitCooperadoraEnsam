@@ -39,8 +39,9 @@
   #consultaEnsam textarea {
     width: 100%;
   }
-  #consultaEnsam select{
-    width: 100%;
+  #consultaEnsam select {
+    width: 107%;
+    height: 40px;
   }
   .redesSociales {
     justify-content: center;
