@@ -42,18 +42,6 @@ window.addEventListener('scroll', () => {
 });
 
 
-// API de Google Maps
-function iniciarMap(){
-  var coord = {lat:-34.7488213 ,lng: -58.4024254};
-  var map = new google.maps.Map(document.getElementById('map'),{
-    zoom: 18,
-    center: coord
-  });
-  var marker = new google.maps.Marker({
-    position: coord,
-    map: map
-  });
-} 
 
 
 //Javasript para modal Socios - Asociarse //////////////////////////////////////////////////////////////////

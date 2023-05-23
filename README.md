@@ -35,7 +35,15 @@ A este diseño se le analizarón las clases y secciones, separando y pensando co
 - El diseño es totalmente responsive en tres cotas minimas
 - Se incorporó un iframe de googlemaps
 - Como api tomamos el uso del recaptcha en el formulario
+- Como iframe usamos el mapa de google maps
 
+## Cambios
+
+Como todo proceso que itera, hubo cambios, mejoras y desiciones que se tomaron evaluando el avance del proyecto.
+Se habia usadola API para el mapa con googlemaps, pero al usar la api la visual quedaba truncada por una capa ocurecida con el texto "for developement purposes only" lo cuál nos pareció que mejoraba notablemente con el iframe. así que decidimos ir con el iframe y no con la API
+Aquí un ejemplo de como quedaban los dos mapas:
+
+![mapas](./img/mapas.jpg)
 
 ## Autoras
 
