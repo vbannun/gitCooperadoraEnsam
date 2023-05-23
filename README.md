@@ -9,6 +9,7 @@ Hemos elegido concretar el proyecto de la página web para la asociación cooper
 - [Proceso](#proceso)
 - [Características](#características)
 - [Instalación](#instalación)
+- [Cambios](#cambios)
 - [Autoras](#autoras)
 - [Licencia](#licencia)
 
