@@ -73,6 +73,60 @@ window.onclick = function(event) {
   }
 }
 
+//Javasript para modal Campañas1 - Campañas //////////////////////////////////////////////////////////////////
+var boton1 = document.getElementById("botonCampanas1");
+var modal1 = document.getElementById("modalCampanas1");
+var cerrarModal1 = document.getElementById("cerrarModal1");
+var oscurecer1 = document.getElementById("oscurecer1");
+
+boton1.onclick = function() {
+  modal1.style.display = "block";
+  oscurecer1.classList.add("mostrar");
+}
+
+cerrarModal1.onclick = function() {
+  modal1.style.display = "none";
+  oscurecer1.classList.remove("mostrar");
+}
+
+var aceptarModalBtn1 = document.getElementById("aceptarModal1");
+aceptarModalBtn1.addEventListener("click", function() {
+  var modal1 = document.getElementById("modalCampanas1");
+  modal1.style.display = "none";
+});
+
+window.onclick = function(event) {
+  if (event.target == modal1) {
+    modal1.style.display = "none";
+  }
+}
+//Javasript para modal Campañas2 - Campañas //////////////////////////////////////////////////////////////////
+var boton2 = document.getElementById("botonCampanas2");
+var modal2 = document.getElementById("modalCampanas2");
+var cerrarModal2 = document.getElementById("cerrarModal2");
+var oscurecer2 = document.getElementById("oscurecer2");
+
+boton2.onclick = function() {
+  modal2.style.display = "block";
+  oscurecer2.classList.add("mostrar");
+}
+
+cerrarModal2.onclick = function() {
+  modal2.style.display = "none";
+  oscurecer2.classList.remove("mostrar");
+}
+
+var aceptarModalBtn2 = document.getElementById("aceptarModal2");
+aceptarModalBtn2.addEventListener("click", function() {
+  var modal2 = document.getElementById("modalCampanas2");
+  modal2.style.display = "none";
+});
+
+window.onclick = function(event) {
+  if (event.target == modal2) {
+    modal2.style.display = "none";
+  }
+}
 
 //Javascript para formulario - Contacto /////////////////////////////////////////////////////////////////////
 

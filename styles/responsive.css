@@ -24,6 +24,9 @@
 		padding-left: 20px;
     padding-right: 20px;
 	}
+  .contenedorPortada{
+max-width: 100%;
+  }
   .header-flex {
     padding: 5px;
   }

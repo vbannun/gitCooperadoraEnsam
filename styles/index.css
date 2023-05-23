@@ -409,6 +409,11 @@ header.sticky-header {
   border-radius: 10px; 
   border: 3px solid var(--celeste);
 }
+.lineaPuntos {
+  border-top: 2px dotted var(--celeste);
+  position: relative;
+  padding-top: 20px;
+}
 /*===============================================*/
 /*    CONTACTO                                   */
 /*===============================================*/
