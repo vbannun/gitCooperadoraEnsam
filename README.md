@@ -9,6 +9,7 @@ Hemos elegido concretar el proyecto de la página web para la asociación cooper
 - [Proceso](#proceso)
 - [Características](#características)
 - [Instalación](#instalación)
+- [Cambios](#cambios)
 - [Autoras](#autoras)
 - [Licencia](#licencia)
 
@@ -39,7 +40,7 @@ A este diseño se le analizarón las clases y secciones, separando y pensando co
 
 ## Cambios
 
-Como todo proceso que itera, hubo cambios, mejoras y desiciones que se tomaron evaluando el avance del proyecto.
+Como todo proceso que itera, hubo cambios, mejoras y decisiones que se tomaron evaluando el avance del proyecto.
 Se habia usadola API para el mapa con googlemaps, pero al usar la api la visual quedaba truncada por una capa ocurecida con el texto "for developement purposes only" lo cuál nos pareció que mejoraba notablemente con el iframe. así que decidimos ir con el iframe y no con la API
 Aquí un ejemplo de como quedaban los dos mapas:
 
