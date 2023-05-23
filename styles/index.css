@@ -40,18 +40,8 @@ body {
   font-weight: 400;
 }
 
-/*body {
-  overflow-x: hidden;
-  font-family: var(--font-family-montserrat);
-  font-size: var(--font-size-m);
-  font-weight: 400;
-  margin: 0;
-}
 
-body, html {
-  margin: 0;
-  padding: 0;
-}*/
+
 
 /*===============================================*/
 /* --- TITULOS Y TEXTOS --- */
@@ -84,8 +74,6 @@ h3 {
   font-weight: 600;
   font-size: var(--font-size-xl);
 }
-
-/*Virshi*/
 h4 {
   font-family: var(--font-family-montserrat);
   font-weight: 900;
@@ -259,13 +247,6 @@ header.sticky-header {
 /*===============================================*/
 /*    PORTADA */   
 /*===============================================*/
-
-.bgBanner {
-  background-image: url(../img/rectangle-2.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 60%; 
-}
 #portada {
   min-height: 38em;
   height: auto;
@@ -276,6 +257,21 @@ header.sticky-header {
   height: auto;
 }
 
+.contenedorPortada {
+  align-content: baseline;
+}
+/*===============================================*/
+/* --- IMAGEN FONDO --- */
+/*===============================================*/
+.bgBanner {
+  background-image: url(../img/rectangle-2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 60%; 
+}
+/*===============================================*/
+/* --- PIE E IMAGEN LOGO PORTADA --- */
+/*===============================================*/
 .pieDeBanner {
   display: flex;
   align-items: flex-end;
@@ -319,17 +315,6 @@ header.sticky-header {
   margin-top: 300px;
   
 }
-.contenedorPortada {
-  align-content: baseline;
-}
-/*===============================================*/
-/* --- IMAGEN FONDO --- */
-/*===============================================*/
-
-/*===============================================*/
-/* --- PIE E IMAGEN LOGO PORTADA --- */
-/*===============================================*/
-
 /*===============================================*/
 /*    NOSOTROS                                   */
 /*===============================================*/
@@ -558,6 +543,13 @@ textarea::placeholder {
 #consultaEnsam button {
   margin: 0 auto;
   display: block;
+}
+/*===============================================*/
+/*    MAPA                                       */
+/*===============================================*/
+#map {
+	height: 300px;
+	width: 100%;
 }
 
 /*===============================================*/
