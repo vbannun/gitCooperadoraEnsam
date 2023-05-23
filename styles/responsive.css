@@ -15,7 +15,7 @@
 
 @media (max-width:1100px){
 	.contenedor {
-		max-width: 900px;
+		max-width: 851px;
 	}
 }
 
@@ -25,7 +25,7 @@
     padding-right: 20px;
 	}
   .contenedorPortada{
-max-width: 100%;
+    max-width: 100%;
   }
   .header-flex {
     padding: 5px;
@@ -35,16 +35,29 @@ max-width: 100%;
   }
   .boxDoble {
     flex-basis: auto;
+    width: 100vh;
+  }
+  h1 {  
+    font-size: var(--font-size-xl);
+  }
+  h2 {
+    font-size: var(--font-size-l);
+  }
+  h3 {    
+    font-size: var(--font-size-l);
+  }
+  h4 {
+    font-size: var(--font-size-m);
   }
   #consultaEnsam input {
-    width: 100%;
+    width: 90%;
   }
   #consultaEnsam textarea {
-    width: 100%;
+    width: 90%;
   }
   #consultaEnsam select {
-    width: 107%;
-    height: 40px;
+    width: 97%;
+    padding: 15px 15px;
   }
   .redesSociales {
     justify-content: center;

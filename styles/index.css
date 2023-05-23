@@ -26,7 +26,7 @@ html {
   height: 100%;
   margin: 0;
   padding: 0;
-}
+  }
 
 body {
   display: flex;
@@ -88,6 +88,9 @@ h4 {
   justify-content: space-between;
   align-items: center;
   /*gap: 20px;*/
+}
+.baselineArriba {
+  align-items:first baseline;
 }
 .alinearArriba {
   align-items: flex-start;
@@ -473,7 +476,7 @@ textarea::placeholder {
 }
 #consultaEnsam select{
   width: 84%;
-  height: 27px;
+  height: auto;
   padding: 10px 15px;
   border-radius: 10px;
   border: 1.5px solid var(--azulclaro);
@@ -501,6 +504,20 @@ textarea::placeholder {
   display: flex;
   padding-top: 15px;
   padding-bottom: 15px;
+}
+.credits {
+	color: #FFFFFF;
+	font-size: 11px;
+	padding: 20px 0;
+	text-transform: uppercase;
+	letter-spacing:3px;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+
+.credits p {
+  text-align: center;
 }
 
 

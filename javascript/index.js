@@ -134,6 +134,15 @@ window.onload = function() {
   var form = document.getElementById("consultaEnsam");
   form.reset();
 };
+window.addEventListener("beforeunload", function(event) {
+  // Mostrar una ventana emergente para confirmar si el usuario desea abandonar la página
+  event.preventDefault();
+  event.returnValue = "";
+  
+  // Restablecer los campos del formulario
+  var form = document.getElementById("consultaEnsam");
+  form.reset();
+});
 
 // Obtener el formulario y el botón de enviar
 const form = document.getElementById('consultaEnsam');
