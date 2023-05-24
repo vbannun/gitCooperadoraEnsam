@@ -1,3 +1,49 @@
+//Javasript para menu hamburguesa //////////////////////////////////////////////////////////////////////////
+const hamburguerBtn = document.getElementById('hamburguer-btn');
+const navegador = document.getElementById('nav');
+const listaItems = navegador.getElementsByTagName('li');
+
+// Agregar la clase "hamburguesa--cerrado" al botón hamburguesa
+hamburguerBtn.classList.add('hamburguesa--cerrado');
+
+function toggleMenu() {
+  navegador.classList.toggle('mostrar');
+  hamburguerBtn.classList.toggle('hamburguesa--cerrado');
+}
+
+function hideMenu() {
+  navegador.classList.remove('mostrar');
+}
+
+function hideMenuOutside(event) {
+  if (!navegador.contains(event.target) && !hamburguerBtn.contains(event.target)) {
+    navegador.classList.remove('mostrar');
+    hamburguerBtn.classList.add('hamburguesa--cerrado');
+  }
+}
+
+hamburguerBtn.addEventListener('click', toggleMenu);
+
+for (let i = 0; i < listaItems.length; i++) {
+  listaItems[i].addEventListener('click', hideMenu);
+}
+
+document.addEventListener('click', hideMenuOutside);
+
+// JAVASCRIPT PARA STICKY HEADER //////////////////////////////////////////////////////////////////////////////
+const header = document.getElementById('cabecera');
+
+window.addEventListener('scroll', () => {
+  if (window.pageYOffset > 0) {
+    header.classList.add('scrolled');
+  } else {
+    header.classList.remove('scrolled');
+  }
+});
+
+
+
+
 //Javasript para modal Socios - Asociarse //////////////////////////////////////////////////////////////////
 var boton = document.getElementById("botonSocios");
 var modal = document.getElementById("modalSocios");
@@ -26,8 +72,68 @@ window.onclick = function(event) {
   }
 }
 
+//Javasript para modal Campañas1 - Campañas //////////////////////////////////////////////////////////////////
+var boton1 = document.getElementById("botonCampanas1");
+var modal1 = document.getElementById("modalCampanas1");
+var cerrarModal1 = document.getElementById("cerrarModal1");
+var oscurecer1 = document.getElementById("oscurecer1");
+
+boton1.onclick = function() {
+  modal1.style.display = "block";
+  oscurecer1.classList.add("mostrar");
+}
+
+cerrarModal1.onclick = function() {
+  modal1.style.display = "none";
+  oscurecer1.classList.remove("mostrar");
+}
+
+var aceptarModalBtn1 = document.getElementById("aceptarModal1");
+aceptarModalBtn1.addEventListener("click", function() {
+  var modal1 = document.getElementById("modalCampanas1");
+  modal1.style.display = "none";
+});
+
+window.onclick = function(event) {
+  if (event.target == modal1) {
+    modal1.style.display = "none";
+  }
+}
+//Javasript para modal Campañas2 - Campañas //////////////////////////////////////////////////////////////////
+var boton2 = document.getElementById("botonCampanas2");
+var modal2 = document.getElementById("modalCampanas2");
+var cerrarModal2 = document.getElementById("cerrarModal2");
+var oscurecer2 = document.getElementById("oscurecer2");
+
+boton2.onclick = function() {
+  modal2.style.display = "block";
+  oscurecer2.classList.add("mostrar");
+}
+
+cerrarModal2.onclick = function() {
+  modal2.style.display = "none";
+  oscurecer2.classList.remove("mostrar");
+}
+
+var aceptarModalBtn2 = document.getElementById("aceptarModal2");
+aceptarModalBtn2.addEventListener("click", function() {
+  var modal2 = document.getElementById("modalCampanas2");
+  modal2.style.display = "none";
+});
+
+window.onclick = function(event) {
+  if (event.target == modal2) {
+    modal2.style.display = "none";
+  }
+}
 
 //Javascript para formulario - Contacto /////////////////////////////////////////////////////////////////////
+// Rsetear al recargar navegador
+window.onload = function() {
+  var form = document.getElementById("consultaEnsam");
+  form.reset();
+};
+
 
 // Obtener el formulario y el botón de enviar
 const form = document.getElementById('consultaEnsam');
@@ -57,6 +163,6 @@ form.addEventListener('submit', (e) => {
 });
 
 // Agregar el evento 'click' al botón de cerrar del modal
-document.querySelector('.cerrar').addEventListener('click', () => {
+document.querySelector('.cerrar-modal').addEventListener('click', () => {
   document.getElementById('modalContacto').style.display = 'none';
 });

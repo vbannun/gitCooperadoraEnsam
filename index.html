@@ -23,46 +23,59 @@
   <link rel="stylesheet" href="./styles/responsive.css">
 
   <!-- Iconos -->
-  <link rel="stylesheet" href="./fonts/themify-icons.css">
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
 
   <!-- Google Fonts -->  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,600" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Andalus" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+  
 
 
 </head>
 
 <body>  
   <!-- Header -->
-  <section id="header" class="bgAzul">
-    <!-- Logo. Class "logoTexto" no va en mobile -->
-    <section id="logo" class="contenedor"> <!--la clase contenedor debe adaptarse a diferentes tamaños de pantallas -->
-      <a href="#">
-        <img src="./img/logo.png" alt="Logo">
-        <img src="./img/logotipoTexto.png" alt="Asociación Cooperadora Unidad Académica Antonio Mentruyt" class="logoTexto">
-      </a>
+  <header id="cabecera" class="sticky-header"> 
+    <section id="header" class="bgAzul">
+      <section id="logo" class="contenedor header-flex logoMobile"> <!--la clase contenedor debe adaptarse a diferentes tamaños de pantallas -->
+        <a href="#">
+          <img src="./img/logo@2x.png" alt="logo" class="logoBanner">
+          <img src="./img/logotipoTexto.png" alt="Asociación Cooperadora Unidad Académica Antonio Mentruyt" class="logoTexto">
+        </a>
+        <section class="navMobile">
+          <button id="hamburguer-btn" class="hamburguesa hamburguer-btn">
+          </button>
+        </section>
+      </section> 
+      <section id="nav" class="contenedor navegador1">      
+        <ul id="navegador" class="top_menu"> 
+          <li><a href="#">Home</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#acciones" class="rayita">Acciones</a></li>
+          <li><a href="#socios" class="rayita">Socios/as</a></li> 
+          <li><a href="#campanas" class="rayita">Campañas</a></li>
+          <li><a href="#contacto" class="rayita">Contacto</a></li>                        
+        </ul>      
+      </section>    
     </section>
-    <section id="nav" class="contenedor navegador1">
-      <ul class="top_menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#nosotros">Nosotros</a></li>
-        <li><a href="#acciones">Acciones</a></li>
-        <li><a href="#socios">Socios/as</a></li> 
-        <li><a href="#campanas">Campañas</a></li>
-        <li><a href="#contacto">Contacto</a></li>                        
-      </ul>
-    </section>
-  </section>
+  </header>
   <!-- Portada -->
   <section id="portada" class="bgAzul bgBanner"> <!--en esta clase va la imagen de fondo -->
+<<<<<<< HEAD
     <section class="contenedor">
+=======
+    <section class="contenedor contenedorPortada">
+>>>>>>> virginia
       <section class="pieDeBanner gridContainerPorcentual"> 
         <section class="elementoPortada1"> <!--acá determinar tamaños y porcentajes según tamaño de pantallas 70/30 -->
           <h1 class="alignTextTop">Asociación Cooperadora<br/>Unidad Académica<br/>Antonio Mentruyt</h1>
-          <p class="andaluciaScript alignTextBottom">Por amor a Nuestra Escuela, a Nuestras Familias y a la Educación Pública</p> 
+          <p class="cookieScript alignTextBottom">Por amor a Nuestra Escuela, a Nuestras Familias y a la Educación Pública</p> 
         </section>
         <section class="elementoPortada2"> <!--acá determinar tamaños y porcentajes según tamaño de pantallas 70/30 -->
-          <img src="../img/logoColor.png" alt="Logo Ensam">
+          <img src="./img/logoColor.png" alt="Logo Ensam">
         </section>        
       </section>  
     </section>     
@@ -76,38 +89,37 @@
           <h2 class="textoAzulClaro">Nosotros</h2>
         </section>
         <section class="gridContenedorSimple">
-          <p class="textoGeneralNegro">Lorem ipsum dolor sit amet consectetur adipiscing elit habitant, vivamus eros metus mauris mattis tellus
-            himenaeos curae, sagittis diam iaculis ultricies tempor porta sodales. Auctor dui lectus donec quam odio
-            litora, senectus mauris libero facilisis nascetur pellentesque, phasellus praesent urna lobortis suscipit.
-            Aliquet porttitor habitasse conubia semper consequat a ornare at himenaeos odio iaculis turpis commodo
-            vivamus quis ultrices potenti ridiculus maecenas, euismod tempus non dictumst eu curabitur elementum vel
-            nulla habitant auctor mauris magnis sapien eget dis in.</p>
+          <p class="textoGeneralNegro">La Cooperadora es una asociación sin fines de lucro, conformada por un grupo de familias, estudiantes, profes, 
+          y el apoyo de los directivos, que trabajan voluntariamente, con el objetivo de mejorar las condiciones educativas.<br/>
+          La Asociación Cooperadora del ENSAM tiene una larga historia que data desde 1957, pasó por diversas situaciónes en las que hubo momentos de mucha actividad 
+          y otros en los que no tanto, hasta que se disolvió.<br/>Se logró, luego de mucho esfuerzo, que la comisión reorganizadora que se congregara a fines del 2017, pudiera por fin en el 2018 
+          conformar la nueva Asociación Cooperadora para el ENSAM.</p>
           <h4 class="celesteClaro textTitulares">Integrantes</h4> <!-- la clase TextTitulares tendra padding top/botoom -->
           <section class="textoNombresCargos textDosColumnas"> <!-- la clase TextDosColumnas style="-webkit-column-count: 2; -moz-column-count: 2; column-count: 2;" -->
             <p>
-              <span class="span cargos">Presidenta</span> Paola Guzmán<br/>
-              <span class="span cargos">Secretaria</span> Natalia Lissarrague<br/>
-              <span class="span cargos">Tesorera</span> María Gabriela González<br/>
-              <span class="span cargos">Vocal 1 titular</span> Micaela Dominguez Caetano<br/>
-              <span class="span cargos">Vocal 1 suplente</span> Christian Lopez<br/>
-              <span class="span cargos">Vocal 2 titular</span> Mirtha Susana<br/>
-              <span class="span cargos">Vocal 2 suplente</span> Gloria Mabel Abelleira<br/>
+              <span class="cargos">Presidenta</span> Paola Guzmán<br/>
+              <span class="cargos">Secretaria</span> Natalia Lissarrague<br/>
+              <span class="cargos">Tesorera</span> María Gabriela González<br/>
+              <span class="cargos">Vocal 1 titular</span> Micaela Dominguez Caetano<br/>
+              <span class="cargos">Vocal 1 suplente</span> Christian Lopez<br/>
+              <span class="cargos">Vocal 2 titular</span> Mirtha Susana DeNegri<br/>
+              <span class="cargos">Vocal 2 suplente</span> Gloria Mabel Abelleira<br/>
             </p>
             <p>
-              <span class="span cargos">Vocal 3 titular</span> Laira Vallejos<br/>
-              <span class="span cargos">Vocal 3 suplente</span> Liliana Bogado<br/>
-              <span class="span cargos">Vocal 4 titular</span> Virginia Bernadette Annun<br/>
-              <span class="span cargos">Vocal 4 suplente</span> Fernanda<br/>
-              <span class="span cargos">Revisor de Cuentas docente</span> Claudia García<br/>
-              <span class="span cargos">Revisor de Cuentas titular</span> Emilio<br/>
-              <span class="span cargos">Revisor de Cuentas suplente</span> Juan Manuel Latorre<br/>	
+              <span class="cargos">Vocal 3 titular</span> Laira Vallejos<br/>
+              <span class="cargos">Vocal 3 suplente</span> Liliana Bogado<br/>
+              <span class="cargos">Vocal 4 titular</span> Virginia Bernadette Annun<br/>
+              <span class="cargos">Vocal 4 suplente</span> Fernanda Santillan<br/>
+              <span class="cargos">Revisor de Cuentas docente</span> Claudia García<br/>
+              <span class="cargos">Revisor de Cuentas titular</span> Emilio López<br/>
+              <span class="cargos">Revisor de Cuentas suplente</span> Juan Manuel Latorre<br/>	
             </p>
           </section>
         </section>
         <section class="gridContenedorSimple">
           <h4 class="celesteClaro textTitulares">Estatuto</h4>
           <p class="textoGeneralNegro">Para consultar y descargar nuestro Estatuto hacé click en el enlace<br/>
-            <a class="linkTexto" href="../archivos/estatuto.pdf" target="_blank">http://cooperadoraensam.com.ar/archivos/estatuto.pdf</a>
+            <a class="linkTexto" href="../archivos/estatuto.pdf" target="_blank">http://cooperadoraensam.ar/archivos/estatuto.pdf</a>
           </p>
         </section>
     </section>
@@ -118,17 +130,22 @@
         <section class="gridContenedorSimple">
           <h2 class="textoCelesteClarito">Acciones</h2>
         </section>
+
         <section class="textDosColumnas textoGeneralBlanco">
+          <section class="contenedorDoble baselineArriba">
+
+            <section class="boxDoble">
           <h3 class="textoCelesteClaro">¿Qué hacemos?</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipiscing elit habitant, vivamus eros metus mauris mattis tellus himenaeos curae, sagittis diam iaculis ultricies tempor porta sodales. Auctor dui lectus donec quam odio litora, senectus mauris libero facilisis nascetur pellentesque, phasellus praesent urna lobortis suscipit. Aliquet porttitor habitasse conubia semper consequat a ornare at himenaeos odio iaculis turpis commodo vivamus quis ultrices potenti ridiculus maecenas, euismod tempus non dictumst eu curabitur elementum velit nulla habitant auctor mauris magnis sapien eget dis in.
-            <br/>
-            Non platea pellentesque lacus ullamcorper rhoncus odio interdum mollis malesuada facilisis facilisi at placerat class, vitae molestie nam natoque pretium ante vehicula venenatis litora taciti duis nostra. Porttitor suspendisse hendrerit mus sociosqu quis urna facilisi facilisis dis eu non, habitasse proin enim risus magna vitae porta fames tincidunt habitant. Suspendisse eu sed netus lectus nullam id sagittis sociis, ac eros facilisis habitasse aliquet semper dictum nulla placerat, luctus convallis sapien arcu sociosqu eget tortor. 
-          </p>
+          La Asociación Cooperadora nos convoca para fortalecer y apoyar a nuestro querido ENSAM. Como miembros orgullosos de esta comunidad educativa, nos esforzamos por crear un entorno acogedor y brindar recursos de calidad a todas las personas que forman parte de nuestra escuela. Trabajamos en colaboración con directivos, docentes, familias, y estudiantes para mejorar la experiencia educativa y asegurar que cada individuo tenga oportunidades enriquecedoras de aprendizaje. Somos una gran familia unida por el objetivo común de hacer de nuestra escuela un lugar inspirador, acogedor y lleno de posibilidades. Fomentamos el sentimiento de pertenencia y animamos a todos y todas a participar activamente. Nos enorgullece formar parte del legado de la escuela pública y contribuir a la formación de futuras generaciones. Creemos en el poder transformador de la educación y en el impacto positivo que podemos lograr si aunamos nuestra fuerza. Nuestra escuela no es solo un edificio, es un hogar donde cultivamos el amor por el conocimiento, la solidaridad y el respeto. Unidos y unidas, construimos un futuro brillante para nuestros estudiantes y nuestra comunidad.
+          </p></section>
+          <section class="boxDoble">
           <h3 class="textoCelesteClaro">¿Cómo hacemos?</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipiscing elit habitant, vivamus eros metus mauris mattis tellus himenaeos curae, sagittis diam iaculis ultricies tempor porta sodales. Auctor dui lectus donec quam odio litora, senectus mauris libero facilisis nascetur pellentesque, phasellus praesent urna lobortis suscipit. Aliquet porttitor habitasse conubia semper consequat a ornare at himenaeos odio iaculis turpis commodo vivamus quis ultrices potenti ridiculus maecenas, euismod tempus non dictumst eu curabitur elementum velit nulla habitant auctor mauris magnis sapien eget dis in. 
-          </p>
+          <p>A través de actividades, eventos y proyectos, buscamos recaudar fondos y recursos para cubrir necesidades educativas, mejoras en la infraestructura y programas extracurriculares que enriquezcan la experiencia de nuestros estudiantes.
+          Los fondos que administra la cooperadora provienen del pago de la cuota societaria, de la venta de cuadernos de comunicaciones, del canon que abona el concesionario del buffet, subsidios que a veces otorga el Estado y donaciones voluntarias; así como también de las actividades como ferias del plato, y otros eventos y proyectos que posibilitan el ingreso de dinero.
+          Cada integrante tiene un rol activo y bien establecido sobre sus competencias en la cooperadora. Estas competencias se establecen desde el primer día, por medio del debate y la votación. Procuramos que la colaboración de los y las cooperadoras sea equitativa y liviana, para que el trabajo sea ameno y sobre todo se pueda llevar a cabo con disfrute y amor. Por ello el dialogo es nuestro principal recurso.
+          </p></section>
+          </section>
         </section>
       </section>
     </section>
@@ -139,12 +156,7 @@
           <h2 class="textoAzulClaro">Socios/as</h2>
         </section>
         <section class="gridContenedorSimple">
-          <p class="textoGeneralNegro">Lorem ipsum dolor sit amet consectetur adipiscing elit habitant, vivamus eros metus mauris mattis tellus
-            himenaeos curae, sagittis diam iaculis ultricies tempor porta sodales. Auctor dui lectus donec quam odio
-            litora, senectus mauris libero facilisis nascetur pellentesque, phasellus praesent urna lobortis suscipit.
-            Aliquet porttitor habitasse conubia semper consequat a ornare at himenaeos odio iaculis turpis commodo
-            vivamus quis ultrices potenti ridiculus maecenas, euismod tempus non dictumst eu curabitur elementum velit
-            nulla habitant auctor mauris magnis sapien eget dis in.</p><br/><br/>
+          <p class="textoGeneralNegro">Abonar la cuota voluntaria de la cooperadora escolar es fundamental para impulsar el crecimiento y la calidad educativa de nuestra escuela. Tu colaboración al asociarte anualmente marca la diferencia y nos permite mejorar instalaciones, adquirir materiales y garantizar que los y las estudiantes no tengan carencias en su cursada. Tu apoyo es clave para construir juntos un futuro prometedor ¡Sumate!</p><br/><br/>
             <button id="botonSocios" class="botonPrimario">Asociate</button>
             <!--Queda oculto hasta que se presione el boton //** PERDON DENISE POR LOS DIVS **// -->
             <div id="modalSocios" class="modal"> <!--Recordar para mobile achicar los tamaños de fuente e interlineados, no reducir más la "s"-->
@@ -173,41 +185,60 @@
           <h2 class="textoCelesteClarito">Campañas</h2>
         </section>
         <section class="contenedorDoble">
+
           <section class="boxDoble">
-            <h3 class="textoCelesteClaro">Compra de insumos</h3>
-            <p class="textoGeneralBlanco">Lorem ipsum dolor sit amet consectetur adipiscing elit habitant, vivamus eros metus mauris mattis tellus
-              himenaeos curae, sagittis diam iaculis ultricies tempor porta sodales. Auctor dui lectus donec quam odio
-              litora, senectus mauris libero facilisis nascetur pellentesque, phasellus praesent urna lobortis suscipit.
-              Aliquet porttitor habitasse conubia semper consequat a ornare at himenaeos odio iaculis turpis commodo
-              vivamus quis ultrices potenti ridiculus maecenas, euismod tempus non dictumst eu curabitur elementum velit
-              nulla habitant auctor mauris magnis sapien eget dis in.</p><br/><br/>
-              <a href="#" target="_blank"><button class="botonSecundario">Donar para esta campaña</button></a>
+            <h3 class="textoCelesteClaro">Refacción de aulas</h3>
+            <p class="textoGeneralBlanco">Estamos llevando a cabo una campaña de recaudación de fondos para mejorar la infraestructura y el mobiliario escolar. Tu contribución es fundamental para brindar a nuestros estudiantes un entorno digno y adecuado para su educación. Cada donación cuenta y nos acerca más a lograr nuestro objetivo de transformar aula a aula todos los espacios. ¡Juntos podemos hacer la diferencia!</p><br/><br/>
+          
+            <button id="botonCampanas1" class="botonSecundario">Donar para refacciones</button>
+            <!-- Queda oculto hasta que se presione el botón -->
+            <div id="modalCampanas1" class="modal">
+              <!-- Recordar para mobile achicar los tamaños de fuente e interlineados, no reducir más la "s" -->
+              <div class="modal-contenido  textoGeneralNegro">
+                <span class="cerrar-modal botonSecundario" id="cerrarModal1">&times;</span><br/>
+                <p>Seria ideal aquí se pueda donar con tarjeta de crédito <br/>Lamentablemente las comisiones de MercadoPago no posibilitan<br/>La incorporación de esta API
+                  <br/><b>Novedades en breve...</b><br/>
+                </p>
+                <button id="aceptarModal1" class="botonSecundario">Aceptar</button>
+              </div>
+            </div>
+            <div id="oscurecer1" class="oscurecer"></div> 
           </section>
+          
+
           <section class="boxDoble">
-            <img src="./img/camapana1.jpg" alt="campaña insumos">
+            <img src="./img/campana1.jpg" alt="campaña insumos">
           </section>
-          <section class="contenedorDoble">
+          
             <section class="boxDoble">
-              <h3 class="textoCelesteClaro">Refacción de aulas</h3>
-              <p class="textoGeneralBlanco">Lorem ipsum dolor sit amet consectetur adipiscing elit habitant, vivamus eros metus mauris mattis tellus
-                himenaeos curae, sagittis diam iaculis ultricies tempor porta sodales. Auctor dui lectus donec quam odio
-                litora, senectus mauris libero facilisis nascetur pellentesque, phasellus praesent urna lobortis suscipit.
-                Aliquet porttitor habitasse conubia semper consequat a ornare at himenaeos odio iaculis turpis commodo
-                vivamus quis ultrices potenti ridiculus maecenas, euismod tempus non dictumst eu curabitur elementum velit
-                nulla habitant auctor mauris magnis sapien eget dis in.</p><br/><br/>
-                <a href="#" target="_blank"><button class="botonSecundario">Donar para esta campaña</button></a>
+              <h3 class="textoCelesteClaro">Compra de insumos</h3>
+              <p class="textoGeneralBlanco">Está campaña de recaudación pretende proveer el material didáctico e insumos específicos para cada una de las áreas de estudio. Desde el laboratorio de ciencias hasta talleres de arte y recursos para educación física, cada donación nos acerca más a ofrecerles a nuestros alumnos las herramientas necesarias para su desarrollo integral. Llegará un día donde no les falte nada, siempre y cuando todos colaboremos. </p><br/><br/>
+              <button id="botonCampanas2" class="botonSecundario">Donar para refacciones</button>
+              <!-- Queda oculto hasta que se presione el botón -->
+              <div id="modalCampanas2" class="modal">
+                <!-- Recordar para mobile achicar los tamaños de fuente e interlineados, no reducir más la "s" -->
+                <div class="modal-contenido  textoGeneralNegro">
+                  <span class="cerrar-modal botonSecundario" id="cerrarModal2">&times;</span><br/>
+                  <p>Seria ideal aquí se pueda donar con tarjeta de crédito <br/>Lamentablemente las comisiones de MercadoPago no posibilitan<br/>La incorporación de esta API
+                    <br/><b>Novedades en breve...</b><br/>
+                  </p>
+                  <button id="aceptarModal2" class="botonSecundario">Aceptar</button>
+                </div>
+              </div>
+              <div id="oscurecer2" class="oscurecer"></div> 
+            
             </section>
             <section class="boxDoble">
-              <img src="./img/camapana2.jpg" alt="Refacción de aulas">
+              <img src="./img/campana2.jpg" alt="Refacción de aulas">
             </section>
-          </section>
+          
         </section>
-        <section class="gridContenedorSimple">
+        <section class="gridContenedorSimple lineaPuntos">
           <p class="textoGeneralBlanco">Para ver todas las campañas activas y finalizadas, así como todas las formas en las que podes colaborar, 
             ya sea desde tu profesión u oficio, hacé clic en el botón:</p><br/>
-            <a href="/camapanas.html" target="_blank"><button class="botonSecundario">Ver más</button></a>
+            <a href="./campanas.html" target="_blank" class="botonSecundario">Ver más</a>
         </section>
-      
+      </section>
     </section>
     <!-- contacto -->
     <section id="contacto" class="bgBlanco">
@@ -215,7 +246,7 @@
         <section class="gridContenedorSimple"> 
           <h2 class="textoAzulClaro">Contacto</h2>
         </section>
-        <section class="contenedorDoble">
+        <section class="contenedorDoble alinearArriba">
           <section class="boxDoble">
             <section id="formulario"> <!-- dar estilo con clases-->
               <form id="consultaEnsam" action="php/enviar_formulario.php" method="POST">
@@ -257,13 +288,13 @@
 
         
           <section class="boxDoble">
-            <p class="textoGeneralNegro">acá otros datos de contacto<br/></p>
+            <iframe width="100%" height="200" src="https://maps.google.com/maps?width=100%25&amp;height=200&amp;hl=en&amp;q=manuel%20Castro%20990,%20banfield,%20buenos%20aires+(Escuela%20Nacional%20Superior%20Antonio%20Mentruyt)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.mapsdirections.info/calcular-ruta.html">Mapa de Ruta</a></iframe><br />
+            <p class="textoGeneralNegro"></p>
             <p class="textoGeneralNegro">Manuel Castro 990, Lomas de Zamora<br/>Buenos Aires, Argentina<br/>ensamcooperadora@gmail.com</p>
-            <section class="redesSociales"> <!-- los iconos aun no funcionan... themify-icons revisar-->
-              <button class="botonRedes" onclick="window.open('mailto:ensamcooperadora@gmail.com');"><i class="fa fa-envelope"></i></button>
-              <a href="#" target="_blank"><button class="botonRedes">F</button></a>
-              <a href="#" target="_blank"><button class="botonRedes">I</button></a>
-              <a href="#" target="_blank"><button class="botonRedes">I</button></a>
+            <section class="redesSociales"> 
+              <a href="mailto:ensamcooperadora@gmail.com" class="botonRedes"><i class="fi fi-rr-envelope"></i></a>
+              <a href="https://www.instagram.com/cooperadoraensam" target="_blank" class="botonRedes"><i class="fi fi-brands-instagram"></i></a>
+              <a href="https://www.facebook.com/cooperadora.ensam" target="_blank" class="botonRedes"><i class="fi fi-brands-facebook"></i></a>
             </section>
           </section>
         </section>
@@ -274,16 +305,19 @@
   <footer id="footer" role="contentinfo" class="bgAzul">
     <section class="contenedor">
       <section class="gridContenedorSimple">
-        <a href="#" class="linksFooter textoCelesteClarito">Preguntas Frecuentes</a>
-        <a href="#" class="linksFooter textoCelesteClarito">Política de Privacidad</a>
+        <a href="./faq.html" class="linksFooter textoCelesteClarito">Preguntas Frecuentes</a>
+        <a href="./politicas.html" class="linksFooter textoCelesteClarito">Política de Privacidad</a>
 
+      </section>
+      <section>
+        <p class="credits"><br/>&copy; 2023 ASOCIACIÓN COOPERADORA UNIDAD ACADÉMICA ANTONIO MENTRUYT<br/><br/>|  <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fcooperadoraensam.ar" target="_blank"> <img src="img/valid-html5.gif" alt="Validado"></a>  |</p>
       </section>
     </section>
   </footer>
 
 
   <!-- Scripts -->
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <script src="./javascript/index.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </body>
 </html>

@@ -1,7 +1,7 @@
 <?php
   if (isset($_POST['g-recaptcha-response'])) {
     $captcha = $_POST['g-recaptcha-response'];
-    $respuesta = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=6LdzqvIlAAAAAAY8atbS9FTIE-qP0l9_z1xSu7kH&response=$captcha");
+    $respuesta = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=AcaBorroLaClaveParaQueNoQuedePulica&response=$captcha");
     $resultado = json_decode($respuesta);
     if ($resultado->success == true) {
       // Captcha válido, procesa el formulario

@@ -12,15 +12,30 @@
   --negro: #00050a;
   --white: #ffffff;
  
-  --font-size-l: 17px;
+  --font-size-l: 20px;
   --font-size-m: 16px;
   --font-size-s: 12px;
   --font-size-xl: 24px;
   --font-size-xxl: 32px;
   --font-size-xxxl: 36px;
  
-  --font-family-andalusia_script-regular: "Andalusia Script-Regular", Helvetica;
   --font-family-montserrat: "Montserrat", Helvetica;
+  --font-family-cookie: "cookie", cursive;
+}
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  }
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  margin: 0 0;
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-m);
+  font-weight: 400;
 }
 body {
   margin: 0 0;
@@ -30,7 +45,36 @@ body {
 .textoGeneralBlanco{
   color: var(--blanco);
 }
-
+.cookieScript { 
+  font-family: var(--font-family-cookie);
+}
+.textoGeneralNegro {
+  color: var(--black)
+}
+.textoAzulClaro {
+  color: var(--azulclaro);
+}
+h1 {
+  font-family: var(--font-family-montserrat);
+  font-weight: 700;
+  font-size: var(--font-size-xxxl);
+}
+h2 {
+  font-family: var(--font-family-montserrat);
+  font-weight: 700;
+  font-size: var(--font-size-xxl);
+  text-align: center;
+}
+h3 {
+  font-family: var(--font-family-montserrat);
+  font-weight: 600;
+  font-size: var(--font-size-xl);
+}
+h4 {
+  font-family: var(--font-family-montserrat);
+  font-weight: 900;
+  font-size: var(--font-size-l);
+}
 /* --- CONTEDENOR Y FONDOS --- */
 .contenedor {
   max-width: 1000px;
@@ -38,7 +82,7 @@ body {
   align-items: center;
   margin: 0 auto;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
 }
 .contenedorDoble {
   display: flex;
@@ -46,6 +90,24 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
+}
+.baselineArriba {
+  align-items:first baseline;
+}
+.alinearArriba {
+  align-items: flex-start;
+}
+.gridContenedorSimple{
+  align-items: center;
+}
+.bgAzul {
+  background-color: var(--azuloscuro);
+  color: var(--blanco);
+}
+.bgBlanco {
+  background-color: var(--blanco);
+  color: var(--black);
 }
 .gridContenedorSimple{
   align-items: center;
@@ -72,27 +134,192 @@ body {
 /*===============================================*/
 
 /* --- NAVEGADOR --- */
+#nav {
+  padding-bottom: 0;
+ }
+.top_menu{
+  height: 44px;
+  letter-spacing: 0;
+  display: flex;
+  justify-content: right;
+  text-align: center;
+  font-family: var(--font-family-montserrat);
+  font-weight: 600;
+  font-size: var(--font-size-m);
+  margin: 0 auto;
+  background-image: url(../img/lineaDivisor.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: center;
+}
+.top_menu ul{
+  margin: 0 auto;
+}
+.top_menu li {
+  height: 44px;
+  width: 120px;
+  line-height: 44px;
+  background-image: url(../img/lineaDivisor.png);
+  background-repeat: no-repeat;
+  background-position-x: left;
+  background-position-y: center;
+}
 
-/* --- LOGO HEADER --- */
+.top_menu li:hover{
+  color: var(--celeste);
+}
+.top_menu a {
+  text-decoration: none;
+  color: var(--celesteclaro);
+}
+.top_menu li:hover a {
+  text-decoration: none;
+  color: var(--celeste);
+}
+#navegador li {
+  list-style: none;
+}
+#navegador li a {
+  padding: 0 10px;
+  height: 100%;
+}
 
+/* --- IMAGENES NAVEGADOR --- */
+
+.header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#logo img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+
+/* --- MENU HAMBURGUESA --- */
+.navegador1 :open{
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.navegador1{
+  padding-top: 0;
+}
+#hamburguer-btn {
+  background-image: url(../img/hamburger-icon.png);
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position:50%;
+  background-color: var(--azuloscuro);
+  height: 44px;
+  width: 44px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  border: 1.5px solid var(--azulclaro);
+}
+#hamburguer-btn:hover {
+  cursor: pointer;
+  background-color: var(--celeste);
+  box-shadow: inset 0px 2px 6px rgba(28, 32, 61, 0.71);
+}
+.navMobile {
+  float: right;
+  padding-right: 20px;
+}
+/*---------------------------------------------------------------*/
+header{
+  position: -webkit-sticky; 
+  position: sticky;
+  top: 0; 
+  z-index:4;
+  transition: height 0.5s ease;
+}
+.sticky-header.scrolled {
+  height: 50px;
+}
+header.sticky-header {
+  transition: height 0.5s ease;
+}
+.sticky-header.scrolled #logo img {
+  display: none;
+  transition: height 0.5s ease;
+}
+
+
+
+/*---------------------------------------------------------------*/
 /*===============================================*/
 /*    PORTADA                                    */
 /*===============================================*/
 
 /* --- IMAGEN FONDO --- */
-
+.bgBanner {
+  background-image: url(../img/rectangle-2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 60%; 
+}
+#portada {
+  min-height: 38em;
+  height: auto;
+}
+#portada .bgBanner img {
+  max-width: 100%;
+  height: auto;
+}
+.contenedorPortada {
+  align-content: baseline;
+}
 /* --- PIE E IMAGEN LOGO PORTADA --- */
 
+.pieDeBanner {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.elementoPortada2 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
 /*===============================================*/
 /*    NOSOTROS                                   */
 /*===============================================*/
-
+.cargos {
+  color: var(--azulclaro);
+  font-weight: 600;
+}
+.textDosColumnas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-basis: calc(50% - 10px);
+  margin-bottom: 20px
+}
+.textTitulares {
+  color: var(--azulclaro);
+  padding-top: 20px;
+ }
 /*===============================================*/
 /*    ACCIONES                                   */
 /*===============================================*/
 .boxDoble {
   flex-basis: calc(50% - 10px);
   margin-bottom: 20px;
+}
+.alinearArriba {
+  vertical-align: top;
 }
 /*===============================================*/
 /*    SOCIOS/AS                                  */
@@ -109,6 +336,8 @@ body {
   font-size: var(--font-size-m);
   font-weight:600;
   transition: all 0.2s ease;
+  margin: 0 auto;
+  display: block;
 }
 .botonPrimario:hover,
 .botonPrimario:focus {
@@ -127,6 +356,11 @@ body {
   font-size: var(--font-size-m);
   font-weight:600;
   transition: all 0.2s ease;
+  text-decoration: none;
+  width: fit-content;
+  margin: 0 auto;
+  display: block;
+
 }
 .botonSecundario:hover,
 .botonSecundario:focus {
@@ -185,11 +419,17 @@ body {
 /*===============================================*/
 /*    CAMPAÑAS                                   */
 /*===============================================*/
-.boxDoble {
-
-}
 .boxDoble img{
-
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px; 
+  border: 3px solid var(--celeste);
+}
+.lineaPuntos {
+  border-top: 2px dotted var(--celeste);
+  position: relative;
+  padding-top: 20px;
 }
 /*===============================================*/
 /*    CONTACTO                                   */
@@ -204,17 +444,20 @@ body {
   color: var(--blanco);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border: none;
-  font-size: var(--font-size-m);
+  font-size: var(--font-size-xl);
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 0.2s ease;
+  text-decoration: none;
+  line-height: 0.7;
 }
 
 .botonRedes:hover {
   background-color: var(--celeste);
   box-shadow: inset 0px 2px 6px rgba(28, 32, 61, 0.71);
+  transform: rotate(-30deg) scale(1.1);
 }
 
 /* --- DISTRIBUCIÓN LINEAL --- */
@@ -223,6 +466,7 @@ body {
   justify-content: left;
   gap: 10px;
 }
+/* --- FORMULARIO --- */
 #consultaEnsam input {
   width: 80%;
   height: 27px;
@@ -246,6 +490,7 @@ textarea::placeholder {
 }
 #consultaEnsam select{
   width: 84%;
+  height: auto;
   padding: 10px 15px;
   border-radius: 10px;
   border: 1.5px solid var(--azulclaro);
@@ -254,8 +499,120 @@ textarea::placeholder {
 #consultaEnsam label {
   font-size: medium;
 }
+#consultaEnsam button {
+  margin: 0 auto;
+  display: block;
+}
 
 /*===============================================*/
 /*    FOOTER                                     */
 /*===============================================*/
+#footer {
+  margin-top: auto;
+}
+.linksFooter {
+  color: var(--celesteclaro);
+  text-decoration: none;
+  font-size: var(--font-size-m);
+  font-weight: 600;
+  display: flex;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.credits {
+	color: #FFFFFF;
+	font-size: 11px;
+	padding: 20px 0;
+	text-transform: uppercase;
+	letter-spacing:3px;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
 
+.credits p {
+  text-align: center;
+}
+
+
+/*===============================================*/
+/*    FAQ                                        */
+/*===============================================*/
+#faqID {
+  height:max-content;
+  z-index: 1;
+}
+.faq-header{
+  font-size: var(--font-size-l);
+  border-bottom: 1px dotted var(--azulclaro);
+  padding: 24px;
+}
+
+.faq-content {
+  margin: 0 auto;
+}
+
+.faq-question {
+  padding: 20px 0;
+  border-bottom: 1px dotted var(--azulclaro);
+}
+
+.panel-title {
+  font-size: var(--font-size-l);
+  font-weight: 600;
+  width: 90%;
+  position: relative;
+  margin: 0;
+  padding: 10px 10px 0 25px;
+  display: block;
+  cursor: pointer;
+  color: var(--azuloscuro);
+}
+
+.panel-content {
+  font-size: var(--font-size-m);
+  padding: 0px 14px;
+  margin: 0 30px;
+  height: 0;
+  overflow: hidden;
+  position: relative;
+  opacity: 0;
+  -webkit-transition: .4s ease;
+  -moz-transition: .4s ease;
+  -o-transition: .4s ease;
+  transition: .4s ease;
+  color: var(--azulclaro);
+}
+
+.panel:checked ~ .panel-content{
+  height: auto;
+  opacity: 1;
+  padding: 20px 10px;
+}
+
+.plus {
+  position: absolute;
+  margin-top: 4px;
+  font-size: var(--font-size-xxl);
+  line-height: 1;
+  -webkit-user-select: none;    
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-transition: .2s ease;
+  -moz-transition: .2s ease;
+  -o-transition: .2s ease;
+  transition: .2s ease;
+}
+
+.panel:checked ~ .plus {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.panel {
+  display: none;
+}

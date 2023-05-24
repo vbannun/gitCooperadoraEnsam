@@ -1,18 +1,71 @@
-@media (max-width: 1020px) {
-  .contenedor {
-    padding-left: 20px;
-    padding-right: 20px;
+/*===============================================*/
+/*     Mobile, Tablet                            */
+/*===============================================*/
+@media (max-width:1200px){
+  #portada {
+    min-height: 50vh; 
   }
 }
-@media (max-width: 768px) {
-    .contenedorDoble {
-      flex-direction: column;
-    }
-  
-    .boxDoble {
-      flex-basis: 100%;
-    }
-    
-  }
 
-  
+@media (max-width: 1024px) {
+  #navegador {
+    display: none;
+  }  
+}
+
+@media (max-width:1100px){
+	.contenedor {
+		max-width: 851px;
+	}
+}
+
+@media (max-width:850px){
+	.contenedor {
+		padding-left: 20px;
+    padding-right: 20px;
+	}
+  .contenedorPortada{
+    max-width: 100%;
+  }
+  .header-flex {
+    padding: 5px;
+  }
+  .textDosColumnas p{
+    margin: 0;
+  }
+  .boxDoble {
+    flex-basis: auto;
+  }
+  h1 {  
+    font-size: var(--font-size-xl);
+  }
+  h2 {
+    font-size: var(--font-size-l);
+  }
+  h3 {    
+    font-size: var(--font-size-l);
+  }
+  h4 {
+    font-size: var(--font-size-m);
+  }
+  #consultaEnsam input {
+    width: 90%;
+  }
+  #consultaEnsam textarea {
+    width: 90%;
+  }
+  #consultaEnsam select {
+    width: 97%;
+    padding: 15px 15px;
+  }
+  .redesSociales {
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1025px) {
+  #hamburguer-btn {
+    display:none;
+  }
+}
+ 
