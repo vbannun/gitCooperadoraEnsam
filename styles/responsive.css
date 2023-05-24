@@ -35,7 +35,6 @@
   }
   .boxDoble {
     flex-basis: auto;
-    width: 100vh;
   }
   h1 {  
     font-size: var(--font-size-xl);
