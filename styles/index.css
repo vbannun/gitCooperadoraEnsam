@@ -503,6 +503,16 @@ textarea::placeholder {
   margin: 0 auto;
   display: block;
 }
+.cerrar-modalForm {
+  float: right;
+  padding: 0 10px;
+  font-size: var(--font-size-xl);
+  
+}
+.cerrar-modalForm:hover,
+.cerrar-modalForm:focus {
+  cursor: pointer;
+}
 
 /*===============================================*/
 /*    FOOTER                                     */
